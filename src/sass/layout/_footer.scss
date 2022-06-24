@@ -1,0 +1,31 @@
+// соц. иконки
+
+.footer__list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+}
+
+.footer__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 32px;
+  height: 32px;
+  background-color: #fea5bb;
+  border-radius: 50%;
+}
+
+.footer__link:hover,
+.footer__link:focus {
+  background-color: #f06689;
+}
+
+.footer__item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.footer__iconc {
+  fill: #ffffff;
+}
