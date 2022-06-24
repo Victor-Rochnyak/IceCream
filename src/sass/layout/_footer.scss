@@ -3,12 +3,13 @@
 }
 
 .footer-container {
+  margin-bottom: 16px;
   border-bottom: 1px solid #e1e1e1;
 }
 
 // логотип
 
-.logo__text {
+.footer__logo {
   width: 200px;
   margin-top: 98px;
   margin-bottom: 40px;
@@ -76,4 +77,19 @@
   text-align: right;
 
   color: var(--accent-color);
+}
+
+// текст iceCream
+
+.footer__text {
+  font-size: 14px;
+  line-height: 152%;
+
+  text-align: center;
+
+  color: #907e82;
+}
+
+.all {
+  display: block;
 }
