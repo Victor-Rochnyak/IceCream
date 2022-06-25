@@ -1,0 +1,122 @@
+.costumer__img {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 32px;
+
+    @media screen and (min-width: 768px) {
+        margin-bottom: 20px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        margin-bottom: 16px;
+    }
+
+}
+
+.costumer-text {
+    position: relative;
+    margin: 0 auto;
+    margin-bottom: 16px;
+    padding: 43px 58px 26px 65px;
+    z-index: 100;
+
+    font-family: var(--main-font);
+    font-weight: 500;
+    font-style: normal;
+    font-size: 12px;
+    line-height: 255%;
+    text-align: center;
+    color: var(--third-color-text);
+    background-color: #FAFAFA;
+
+    background-image: repeating-linear-gradient(#E1E1E1 180px);
+
+
+    @media screen and (min-width: 768px) {
+        margin-bottom: 4px;
+        font-size: 14px;
+        line-height: 216%;
+        letter-spacing: 0.04em;
+    }
+
+    @media screen and (min-width: 1200px) {
+        margin-bottom: 16px;
+        font-size: 16px;
+        line-height: 186%;
+
+    }
+}
+
+.costumer__text-icon {
+    position: absolute;
+    top: 30px;
+    left: 54px;
+    fill: #E1E1E1;
+
+}
+
+.costumer__slider-pagination {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 16px;
+}
+
+.costumer__slider-item {
+    margin-right: 10px;
+    width: 4px;
+    height: 4px;
+    background-color: var(--accent-color);
+    border-radius: 50%;
+}
+
+.costumer__slider-item:last-child {
+    margin-left: 0;
+}
+
+.costumer__info {
+    margin: 0 auto;
+    margin-bottom: 16px;
+    width: 172px;
+    font-family: var(--main-font);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 186%;
+    text-align: center;
+    color: var(--third-color-text);
+
+    @media screen and (min-width: 768px) {
+        margin-bottom: 32px;
+        font-size: 16px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        font-size: 20px;
+
+    }
+}
+
+.costumer__infoslider-pagination {
+    display: flex;
+    justify-content: center;
+}
+
+.costumer__infoslider-item {
+    margin-right: 18px;
+    width: 12px;
+    height: 12px;
+    background-color: #D9D9D9;
+    border-radius: 50%;
+}
+
+.costumer__infoslider-item:last-child {
+    margin-right: 0;
+}
+
+.costumer__infoslider-item.current {
+    background-color: #E5E5E5;
+}
+
+.costumer__infoslider-icon {
+    fill: var(--accent-color);
+}
