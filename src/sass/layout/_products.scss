@@ -285,12 +285,21 @@ background-image: url('../images/products/products3-sm.png');
     line-height: 34px;
   }
 }
-
+.products__name::after {
+    position: absolute;
+    content: '';
+    top: 55px;
+    left: 40%;
+    width: 26px;
+    height: 6px;
+    background-size: 26px 6px;
+    background-image: url('/src/images/products/dt.png');
+  }
 .products__about {
   font-family: var(--main-font);
   font-weight: 700;
   font-size: 14px;
-  line-height: 1.15;
+  line-height: 1.52;
   text-align: center;
   letter-spacing: 0.04em;
   color: var(--first-color-text);
@@ -299,6 +308,7 @@ background-image: url('../images/products/products3-sm.png');
   margin-bottom: 32px;
 
   @media screen and (min-width: 768px) {
+    line-height: 1.76;
     padding-left: 32px;
     padding-right: 32px;
   }
@@ -309,3 +319,22 @@ background-image: url('../images/products/products3-sm.png');
     padding-right: 63px;
   }
 }
+.button {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40px;
+    height: 40px;
+    border-color: transparent;
+    border-radius: 50%;
+    background-color: var(--first-color-text);
+  &:hover,&:focus{
+    background-color: var(--accent-color);
+  }
+  }
+  .icon-arrow {
+    fill:red;
+  }
+    .button:hover .icon-arrow {
+      fill: var(--first-color-text);
+    }
