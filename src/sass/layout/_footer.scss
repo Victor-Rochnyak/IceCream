@@ -7,6 +7,7 @@
   flex-direction: column;
   padding-top: 40px;
   padding-bottom: 40px;
+
   border-bottom: 1px solid #e1e1e1;
 
   @media screen and (min-width: 768px) {
@@ -26,7 +27,9 @@
 .footer-logo {
   display: flex;
   flex-direction: column;
+}
 
+.footer-logo__logo {
   margin-bottom: 40px;
 
   @media screen and (min-width: 768px) {
