@@ -328,5 +328,13 @@ background-image: url('../images/products/products3-sm.png');
     border-color: transparent;
     border-radius: 50%;
     background-color: var(--first-color-text);
-
+  &:hover,&:focus{
+    background-color: var(--accent-color);
   }
+  }
+  .icon-arrow {
+    fill:red;
+  }
+    .button:hover .icon-arrow {
+      fill: var(--first-color-text);
+    }
