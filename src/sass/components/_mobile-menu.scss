@@ -1,3 +1,42 @@
+// .mobyle__menu.is-hidden {
+//   opacity: 0;
+//   visibility: hidden;
+//   pointer-events: none;
+// }
+.form__close-icon {
+  fill: #ffffff;
+  width: 100%;
+  height: 100%;
+}
+
+.form__button-close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+
+  display: flex;
+
+  padding: 0;
+  width: 30px;
+  height: 30px;
+  // border: 1px solid rgba(0, 0, 0, 0.1);
+  border: none;
+
+  align-items: center;
+  justify-content: center;
+  // border-radius: 50%;
+
+  background-color: #e17992;
+
+  cursor: pointer;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form__button-close:hover .form__close-icon,
+.form__button-close:focus .form__close-icon {
+  fill: #d41443;
+}
+
 .mobyle__buy-now {
   margin-bottom: 19px;
   margin-right: auto;
@@ -43,7 +82,6 @@
 
   z-index: 100;
 
-  // padding: 48px 40px;
   padding-top: 60px;
 
   font-family: 'DM Sans';
@@ -60,18 +98,7 @@
 
   background-color: #e17992;
 
-  transform: scale(0.4);
-  opacity: 0;
-
-  // &.is-open {
-  //   display: flex;
-
-  //   transition: transform 250ms ease-in-out 400ms,
-  //     opacity 250ms ease-in-out 400ms;
-
-  //   transform: scale(1);
-  //   opacity: 1;
-  // }
+  opacity: 1;
 
   flex-direction: column;
 }
@@ -86,9 +113,13 @@
   color: #ffffff;
 }
 
-.mobyle__link--home {
+.mobyle__link:hover,
+.mobyle__link:focus {
   color: #d41443;
 }
+// .mobyle__link--home {
+//   color: #d41443;
+// }
 
 .mobyle__nav-item {
   padding: 12px 0;
