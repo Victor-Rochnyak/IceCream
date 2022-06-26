@@ -70,6 +70,8 @@ padding-bottom: 60px;
   margin-top: 140px;
   margin-bottom: 0px;
 
+   
+
   @media screen and (min-width: 768px) {
     margin-top: 138px;
     padding-top: 118px;
@@ -335,6 +337,7 @@ background-image: url('../images/products/products3-sm.png');
   &:hover,&:focus{
     background-color: var(--accent-color);
   }
+   
   }
   .icon-arrow {
     fill:red;
@@ -342,3 +345,17 @@ background-image: url('../images/products/products3-sm.png');
     .button:hover .icon-arrow {
       fill: var(--first-color-text);
     }
+    // animation
+
+        @keyframes rotate {
+          100% {
+            transform: rotateY(360deg) translate(0em,-4em);
+          }
+        }
+    
+        .products__list-item:hover::before,
+        .products__list-item:focus::before {
+          @media screen and (min-width: 768px) {
+            animation: rotate 2s;
+          }
+        }
