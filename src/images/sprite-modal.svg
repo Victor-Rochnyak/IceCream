@@ -16,5 +16,11 @@
       <path
         d="M30.341 3.556v24.889H3.793V3.556h26.548zm0-3.556H3.793C1.707 0 0 1.6 0 3.556v24.889c0 1.956 1.707 3.556 3.793 3.556h26.548c2.086 0 3.793-1.6 3.793-3.556V3.556C34.134 1.6 32.427 0 30.341 0z" />
     </symbol>
+    <symbol id="icon-more" viewBox="0 0 32 32">
+      <path fill="none" stroke="currentColor" style="stroke: currentColor" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="6.4" d="M5.184 3.2l14.144 12.8-14.144 12.8"></path>
+    </symbol>
+     <symbol id="icon-close_mob" viewBox="0 0 32 32">
+      <path d="m23.73 10.3-1.5-1.5-5.96 5.96L10.3 8.8l-1.5 1.5 5.96 5.97-5.96 5.96 1.5 1.5 5.97-5.96 5.96 5.96 1.5-1.5-5.96-5.96 5.96-5.97z"/>
+    </symbol>
   </defs>
 </svg>

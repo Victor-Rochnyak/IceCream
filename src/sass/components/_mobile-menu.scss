@@ -1,0 +1,135 @@
+// .mobyle__button {
+//   display: flex;
+//   margin-left: auto;
+//   padding: 0;
+//   border: none;
+//   background-color: transparent;
+//   cursor: pointer;
+//   z-index: 20;
+//   fill: #d41443;
+
+//   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+//   &:hover .mobyle__menu-cross-icon {
+//     fill: #ffffff;
+//     // fill: var(--color-button);
+//   }
+// }
+
+// .mobyle__icon-cross {
+//   display: none;
+// }
+// .mobyle__button.is-open .mobyle__icon-cross {
+//   display: block;
+// }
+
+// .mobyle__button.is-open .mobyle__icon-menu {
+//   display: none;
+// }
+
+// ______________________________
+
+@media screen and (max-width: 767px) {
+  .mobyle__buy-now {
+    margin-bottom: 19px;
+    margin-right: auto;
+    margin-left: auto;
+    border: none;
+
+    width: 209px;
+    height: 44px;
+
+    background-color: #ffffff;
+    border-radius: 22px;
+    border-color: #ffffff;
+
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.31;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    justify-content: center;
+
+    color: #d41443;
+
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+      background-color: #ecebeb;
+    }
+  }
+
+  .mobyla__buy-icon {
+    fill: #d41443;
+    margin-left: 30px;
+  }
+
+  .mobyle__menu {
+    // display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    z-index: 100;
+
+    // padding: 48px 40px;
+    padding-top: 60px;
+
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.29;
+
+    color: #d41443;
+
+    max-width: 480px;
+    width: 100%;
+    height: 100vh;
+
+    background-color: #e17992;
+
+    transform: scale(0.4);
+    opacity: 0;
+
+    // &.is-open {
+    //   display: flex;
+
+    //   transition: transform 250ms ease-in-out 400ms,
+    //     opacity 250ms ease-in-out 400ms;
+
+    //   transform: scale(1);
+    //   opacity: 1;
+    // }
+
+    flex-direction: column;
+  }
+}
+
+.mobyle__link {
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.29;
+
+  color: #ffffff;
+}
+
+.mobyle__link--home {
+  color: #d41443;
+}
+
+.mobyle__nav-item {
+  padding: 12px 0;
+  padding-left: 20px;
+  width: 100%;
+
+  &:nth-child(2n + 1) {
+    border-top: 1px solid #e18298;
+    border-bottom: 1px solid #e18298;
+  }
+}
