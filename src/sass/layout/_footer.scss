@@ -110,7 +110,8 @@
   position: relative;
 }
 
-.footer__link:hover:before {
+.footer__link:hover::before,
+.footer__link:hover::after {
   content: '';
   position: absolute;
   border: 1px solid var(--accent-color);
@@ -120,6 +121,10 @@
   bottom: -20px;
   border-radius: 50px;
   animation: footer__item 1.8s linear infinite;
+}
+
+.footer__link:hover:after {
+  animation-delay: 1s;
 }
 
 @keyframes footer__item {
