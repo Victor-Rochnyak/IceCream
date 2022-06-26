@@ -13,12 +13,27 @@
 
 }
 
-.costumer-text {
-    position: relative;
+.costumer__text-group {
     margin: 0 auto;
+    position: relative;
     margin-bottom: 16px;
+    min-width: 280px;
+
+    @media screen and (min-width: 768px) {
+        margin-bottom: 4px;
+        width: 620px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        margin-bottom: 16px;
+        width: 968px;
+    }
+
+}
+
+.costumer__text {
+    margin: 0 auto;
     padding: 43px 58px 26px 65px;
-    z-index: 100;
 
     font-family: var(--main-font);
     font-weight: 500;
@@ -29,30 +44,65 @@
     color: var(--third-color-text);
     background-color: #FAFAFA;
 
-    background-image: repeating-linear-gradient(#E1E1E1 180px);
-
-
     @media screen and (min-width: 768px) {
-        margin-bottom: 4px;
         font-size: 14px;
         line-height: 216%;
         letter-spacing: 0.04em;
     }
 
     @media screen and (min-width: 1200px) {
-        margin-bottom: 16px;
         font-size: 16px;
         line-height: 186%;
+    }
 
+    &:before {
+        content: " ";
+        width: 54px;
+        height: 40px;
+
+        background-image: url('../images/review/text-reweiv-decoration.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+
+        position: absolute;
+        top: 30px;
+        left: 54px;
+        opacity: 0.4;
+
+        @media screen and (min-width: 768px) {
+            top: 20px;
+            width: 60.35px;
+        }
+
+        @media screen and (min-width: 1200px) {
+            width: 54px;
+        }
     }
 }
 
-.costumer__text-icon {
+.costumer__text-decoration {
     position: absolute;
-    top: 30px;
-    left: 54px;
-    fill: #E1E1E1;
+    top: 74px;
+    left: 50px;
+    right: 50px;
+    bottom: 0;
+    margin: 0 auto;
+    width: calc(100% - 100px);
+    background: repeating-linear-gradient(#E1E1E1 1px,
+            transparent 3px,
+            transparent 31px);
 
+    @media screen and (min-width: 768px) {
+        left: 6px;
+        width: calc(100% - 12px);
+
+    }
+
+    @media screen and (min-width: 1200px) {
+        left: 72px;
+        width: calc(100% - 144px);
+
+    }
 }
 
 .costumer__slider-pagination {
@@ -114,7 +164,7 @@
 }
 
 .costumer__infoslider-item.current {
-    background-color: #E5E5E5;
+    background-color: inherit;
 }
 
 .costumer__infoslider-icon {
