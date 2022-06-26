@@ -277,9 +277,10 @@ background-image: url('../images/products/products3-sm.png');
 .products__name {
   position: relative;
   display: inline-block;
+  font-weight: normal;
   font-family: var(--secondary-font);
   font-size: 20px;
-  line-height: 1.15;
+  line-height:23px;
   text-align: center;
   letter-spacing: 0.04em;
   text-transform: uppercase;
@@ -300,6 +301,10 @@ background-image: url('../images/products/products3-sm.png');
     height: 6px;
     background-size: 26px 6px;
     background-image: url('/src/images/products/dt.png');
+@media screen and (min-width: 1200px) {
+    top: 65px;
+  }
+
   }
 .products__about {
   font-family: var(--main-font);
@@ -320,10 +325,17 @@ background-image: url('../images/products/products3-sm.png');
   }
 
   @media screen and (min-width: 1200px) {
+    font-size: 16px;
+      line-height: 1.76;
     margin-bottom: 60px;
     padding-left: 63px;
     padding-right: 63px;
   }
+}
+.prod__hidden {
+  @media screen and (min-width: 768px) {
+   display: none;
+    }
 }
 .button {
     display: block;
