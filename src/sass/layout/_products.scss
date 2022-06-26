@@ -332,12 +332,12 @@ background-image: url('../images/products/products3-sm.png');
     padding-right: 63px;
   }
 }
-.prod__hidden {
+.products__hidden {
   @media screen and (min-width: 768px) {
    display: none;
     }
 }
-.button {
+.products__button {
     display: block;
     margin-left: auto;
     margin-right: auto;
