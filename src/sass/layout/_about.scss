@@ -2,6 +2,8 @@
   padding-top: 60px;
   padding-bottom: 40px;
   background-color: #fff5f6;
+  margin-left: auto;
+  margin-right: auto;
 
   @media screen and(min-width: 768px) {
     padding-top: 60px;
@@ -10,6 +12,31 @@
 
   @media screen and (min-width: 1200px) {
     padding-bottom: 81px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    max-width: 1200px;
+    justify-content: start;
+    background-position-y: 216px;
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    background-image: url(../images/about/about-bg-lg.png);
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/about/about-bg-lg@2x.png);
+    }
+  }
+}
+
+.container__about {
+  @media screen and (min-width: 1200px) {
+    width: 100%;
+
+    padding-left: 0;
+    padding-right: 0;
   }
 }
 
@@ -69,6 +96,7 @@
   @media screen and (min-width: 1200px) {
     margin-right: 99px;
     width: 501px;
+    margin-left: 16px;
   }
 }
 
@@ -121,7 +149,7 @@
 
   @media screen and (min-width: 1200px) {
     width: 463px;
-    font-size: 16px;
+    font-size: 14px;
     margin-top: 32px;
     letter-spacing: 0.04em;
   }
@@ -147,6 +175,10 @@
   &:focus {
     background-color: #ecebeb;
     color: #d41443;
+  }
+
+  @media screen and (min-width: 768px) {
+    margin-top: 40px;
   }
 }
 
@@ -189,19 +221,7 @@
   @media screen and (min-width: 768px) {
     display: flex;
     margin-top: 40px;
-    justify-content: center;
+    // justify-content: center;
     background-image: none;
-  }
-
-  @media screen and (min-width: 1200px) {
-    justify-content: start;
-    background-size: cover;
-    background-image: url(../images/about/about-bg-lg.png);
-
-    @media (min-device-pixel-ratio: 2),
-      (min-resolution: 192dpi),
-      (min-resolution: 2dppx) {
-      background-image: url(../images/about/about-bg-lg@2x.png);
-    }
   }
 }
