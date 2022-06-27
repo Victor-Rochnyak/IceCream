@@ -378,10 +378,11 @@
   height: 100%;
   left: 0px;
   top: 0px;
-  background-color: var(--secondary-bg-color);
+  background-color: rgba(255, 184, 202, 0.6);
   opacity: 1;
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
     visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  z-index: 4;
 }
 
 .backdrop.is-hidden {
@@ -389,11 +390,12 @@
   pointer-events: none;
   visibility: hidden;
 }
-.backdrop--milkshakes {
-  background-color: var(--forth-bg-color);
+
+.backdrop--iceCoffee {
+  background-color: rgba(240, 209, 165, 0.6);
 }
-.backdrop--iceCofee{
-  background-color: var(--third-bg-color);
+.backdrop--milkshakes {
+  background-color: rgba(194, 226, 151, 0.6);
 }
 .backdrop.is-hidden .products__modal {
   transform: translate(-50%, -50%) scale(0.5);
@@ -401,53 +403,108 @@
 
 .products__modal {
   position: absolute;
-  top: 50%;
+  text-align: center;
+  width: 90%;
   left: 50%;
-  padding: 40px;
-  transform: translate(-50%, -50%) scale(1);
-  width: 70%;
-  height: 70%;
-  background: #ffffff;
-  align-items: center;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
+  top: 50%;
+  transform: translate(-50%, -50%);
+  overflow: auto;
+  max-height: 95%;
+  padding: 25px;
+  background-color: var(--first-color-text);
+  box-shadow: 0 1px 3px rgb(0 0 0 / 12%), 0 1px 1px rgb(0 0 0 / 14%),
+    0 2px 1px rgb(0 0 0 / 20%);
   border-radius: 24px;
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
- 
+
+  @media screen and (min-width: 480px) {
+    width: 90%;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  @media screen and (min-width: 768px) {
+    width: 80%;
+  }
   @media screen and (min-width: 1200px) {
-    width: 40%;
-    height: 40%;
+    width: 50%;
   }
 }
+
 .products__about--modal {
-  color: var(--secondary-bg-color);
+  color: var(--accent-color);
+}
+.try {
+  font-style: var(--secondary-font);
+  font-weight: 700;
+  font-size: 26px;
+  @media screen and (min-width: 768px) {
+    font-size: 32px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 38px;
+  }
 }
 .products__modal-button {
   position: absolute;
   display: flex;
-  width: 30px;
-  height: 30px;
-  right: 45%;
+  width: 40px;
+  height: 40px;
+  right: 43%;
   top: 80%;
   align-items: center;
   justify-content: center;
   padding: 0;
-  background: #ffffff;
+  background: var(--accent-color);
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
   cursor: pointer;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  margin-top: 20px;
+
+  @media screen and (min-width: 768px) {
+    right: 46%;
+    width: 40px;
+    height: 40px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    
+    width: 50px;
+    height: 50px;
+  }
 }
 
 .products__modal-button:hover,
 .products__modal-button:focus {
-  background: var(--accent-color);
+  background: var(--first-color-text);
   .products__modal-icon {
-      fill: var(--first-color-text);
-    }
+    fill: var(--accent-color);
+  }
 }
 
-
 .products__modal-icon {
-  fill: var(--accent-color);
+  fill: var(--first-color-text);
+}
+.iceCream {
+  display: inline-block;
+  justify-content: center;
+  border-radius:50% ;
+  @media screen and (min-width: 768px) {
+    width: 200px;
+    height: 200px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 250px;
+    height: 250px;
+  }
+}
+.products__modal:hover .iceCream,
+.products__modal:focus .iceCream {
+  animation: circle 3s;
+}
+
+@keyframes circle {
+  100% {
+    transform: rotateZ(360deg);
+  }
 }

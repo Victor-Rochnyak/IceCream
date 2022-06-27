@@ -1,4 +1,4 @@
-<section class="section products">
+<section class="section products" id="products">
     <div class="container products__container">
         <p class="products__subtitle">100% natural</p>
         <h2 class="products__general">products</h2>
@@ -38,7 +38,8 @@
 <!-- modal -->
     <div class="backdrop is-hidden" data-iceCream>
         <div class="products__modal">
-            <picture>
+            <p class="products__about--modal try" >Try this delicious!</p>
+            <picture >
                 <source srcset="/src/images/products/iceCream_d.jpg 1x, /src/images/products/iceCream_d@2x.jpg  2x"
                     media="(min-width: 1200px)" />
                 <source srcset="/src/images/products/iceCream_t.jpg 1x, /src/images/products/iceCream_t@2x.jpg  2x"
@@ -48,7 +49,7 @@
                 <img class="iceCream" src="/src/images/products/iceCream_m.jpg" alt="iceCreem" width="150" height="150"
                     loading="lazy" />
             </picture>
-            <p class="products__about products__about--modal">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia delectus asperiores saepe ducimus laudantium repudiandae necessitatibus nesciunt exercitationem accusamus </p>
+            <p class="products__about products__about--modal">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et </p>
             <button class="products__modal-button" type="button" data-iceCream-close aria-label="Закрыть окно">
                 <svg class="products__modal-icon" width="11" height="11">
                     <use href="/src/images/sprite.svg#icon-arrow"></use>
@@ -59,6 +60,7 @@
 
     <div class="backdrop is-hidden backdrop--iceCoffee" data-iceCoffee>
         <div class="products__modal">
+            <p class="products__about--modal try">Try this delicious!</p>
             <picture>
                 <source srcset="/src/images/products/iceCoffee_d.jpg 1x, /src/images/products/iceCoffee_d@2x.jpg 2x"
                     media="(min-width: 1200px)" />
@@ -70,9 +72,8 @@
                     loading="lazy" />
             </picture>
             
-            <p class="products__about products__about--modal">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Mollitia delectus asperiores saepe ducimus laudantium repudiandae necessitatibus nesciunt exercitationem
-                accusamus  </p>
+            <p class="products__about products__about--modal">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et </p>
             <button class="products__modal-button" type="button" data-iceCoffee-close aria-label="Закрыть окно">
                 <svg class="products__modal-icon" width="11" height="11">
                     <use href="/src/images/sprite.svg#icon-arrow"></use>
@@ -83,15 +84,15 @@
 
     <div class="backdrop is-hidden backdrop--milkshakes" data-milkshakes>
         <div class="products__modal">
+            <p class="products__about--modal try">Try this delicious!</p>
         <picture>
             <source srcset="/src/images/products/milk_d.jpg 1x, /src/images/products/milk_d@2x.jpg  2x" media="(min-width: 1200px)" />
             <source srcset="/src/images/products/milk_t.jpg 1x, /src/images/products/milk_t@2x.jpg  2x" media="(min-width: 768px)" />
             <source srcset="/src/images/products/milk_m.jpg 1x, /src/images/products/milk_m@2x.jpg  2x" media="(max-width: 767px)" />
             <img class="iceCream" src="/src/images/products/milk_m.jpg" alt="milkshakes" width="150" height="150" loading="lazy" />
         </picture>
-            <p class="products__about products__about--modal">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Mollitia delectus asperiores saepe ducimus laudantium repudiandae necessitatibus nesciunt exercitationem
-                accusamus </p>
+            <p class="products__about products__about--modal">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et </p>
             <button class="products__modal-button" type="button" data-milkshakes-close aria-label="Закрыть окно">
                 <svg class="products__modal-icon" width="11" height="11">
                     <use href="/src/images/sprite.svg#icon-arrow"></use>
