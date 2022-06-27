@@ -248,13 +248,15 @@
   left: 50%;
   transform: translate(-50%, -50%);
   width: 320px;
-
+  height: 450px;
+  border: 5px solid var(--accent-color);
+  border-radius: 20px;
   @media screen and (min-width: 768px) {
     width: 450px;
   }
 
   @media screen and (min-width: 1200px) {
-    width: 528px;
+    width: 600px;
   }
 }
 
@@ -288,4 +290,10 @@
 .location__close-btn:hover .location__close-iconc,
 .location__close-btn:focus .location__close-iconc {
   fill: var(--accent-color);
+}
+
+.google__map {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
 }
