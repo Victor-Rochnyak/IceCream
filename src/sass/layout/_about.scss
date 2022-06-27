@@ -13,6 +13,14 @@
   }
 }
 
+.container__about {
+  @media screen and (min-width: 1200px) {
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
 .about__label {
   font-family: 'Titan One';
   font-style: normal;
