@@ -1,5 +1,5 @@
 .footer {
-  background: var(--footer-bg-color);
+  // background: var(--footer-bg-color);
 }
 
 .footer-container {
@@ -9,6 +9,7 @@
   padding-top: 40px;
 
   border-bottom: 1px solid #e1e1e1;
+  background: var(--footer-bg-color);
 
   @media screen and (min-width: 768px) {
     flex-direction: row;
