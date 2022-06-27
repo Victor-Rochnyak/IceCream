@@ -1,9 +1,26 @@
-<!-- HEADER -->
-<header class="header section">
+
+  <!-- HEADER -->
+<header class="section header">
   <div class="container hero-container">
     <a href="./index.html" class="logo-link">
-      <img src="./images/logo.svg" alt="Логотип" />
+      <picture>
+        <source
+          media="(min-width: 320px)"
+          srcset="
+            ./images/header-hero/Logo.png    1x,
+            ./images/header-hero/Logo@2x.png 2x
+          "
+          type="image/png"
+        />
+        <img
+          src="./images/header-hero/Logo.png"
+          alt="Логотип"
+          width="199"
+          height="50"
+        />
+      </picture>
     </a>
+
     <!-- DSEKTOP-NAVIGATION -->
     <ul
       class="nav-desktop-list"
@@ -39,7 +56,7 @@
     <button class="header__button" type="button">
       Buy now
       <svg class="header__button-icon" width="8" height="10">
-        <use href="./images/sprite-modal.svg#icon-vector"></use>
+        <use href="./images/sprite-modal.svg#icon-vector-new"></use>
       </svg>
     </button>
   </div>
@@ -80,3 +97,4 @@
     </p>
   </section>
 </main>
+
