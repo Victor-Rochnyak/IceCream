@@ -1,0 +1,74 @@
+ <!-- Franchise modal -->
+ <section>
+
+ 
+ <div class="franchise__backdrop is-hidden" data-franchise>
+    <div class="franchise__modal-wrapper">
+      <button class="franchise__modal-btn" data-franchise-close>
+        <svg
+          class="franchise__modal-btn-focus"
+          xmlns="http://www.w3.org/2000/svg"
+          viewbox="0 0 320 512"
+          width="18"
+          height="18"
+        >
+          <path
+            d="M310.6 361.4c12.5 12.5 12.5 32.75 0 45.25C304.4 412.9 296.2 416 288 416s-16.38-3.125-22.62-9.375L160 301.3L54.63 406.6C48.38 412.9 40.19 416 32 416S15.63 412.9 9.375 406.6c-12.5-12.5-12.5-32.75 0-45.25l105.4-105.4L9.375 150.6c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L160 210.8l105.4-105.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-105.4 105.4L310.6 361.4z"
+          />
+        </svg>
+      </button>
+
+<h2 class="franchise__section-title">Leave a request and we will contact you</h2>
+<form class="franchise__contact-form" name="franchise__contact-form">
+  <div class="franchise__form-wrapper">
+    <label class="franchise__form-group">
+      <input
+        class="franchise__form-input"
+        type="text"
+        id="user-name"
+        name="user-name"
+        placeholder="Richard"
+      />
+      <span class="franchise__form-label">Name*</span>
+    </label>
+    <label class="franchise__form-group">
+      <input
+        class="franchise__form-input"
+        type="text"
+        id="user-phone"
+        name="user-phone"
+        placeholder="+38 099 123 45 67"
+      />
+      <span class="franchise__form-label">Phone*</span>
+    </label>
+  </div>
+
+  <label class="franchise__form-message-group">
+    <input
+      class="franchise__form-message"
+      type="text"
+      id="user-email"
+      name="user-email"
+      placeholder="Richard@gmail.com"
+    />
+    <span class="franchise__form-label">Email*</span>
+  </label>
+
+  <label class="franchise__form-message-group">
+    <textarea
+      class="franchise__form-message"
+      name="user-message"
+      id="user-message"
+      rows="2"
+      placeholder="Your comment..."
+    ></textarea>
+    <span class="franchise__form-label">Message</span>
+  </label>
+  <button class="franchise__buttom-order" type="submit">I want to open a store</button>
+</form>
+</div>
+
+
+</div>
+<script src="/src/js/franchise.js"></script>
+</section>
