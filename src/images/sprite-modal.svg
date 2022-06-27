@@ -30,5 +30,10 @@
     <symbol id="icon-vector" viewBox="0 0 22 32">
 <path  d="M3.321 3.2l14.974 12.8-14.974 12.8"></path>
 </symbol>
+
+<symbol id="icon-vector-new" viewBox="0 0 32 32">
+<path fill="none" stroke="#d41443" style="stroke: var(--color1, #d41443)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="6.4" d="M3.322 3.2l14.973 12.8-14.976 12.8"></path>
+</symbol>
+
   </defs>
 </svg>
