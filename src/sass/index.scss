@@ -12,10 +12,11 @@
 @import './components/form';
 @import './components/mobile-menu';
 @import './components/social-icons';
+@import './components/franchise-modal';
 
 // loyouts секции сайта
-@import './layout/header';
-@import './layout/hero';
+@import './layout/hero-header';
+
 @import './layout/products';
 @import './layout/about';
 @import './layout/advantages';
