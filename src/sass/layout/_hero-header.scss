@@ -91,7 +91,7 @@
 //     background-color: #ecebeb;
 //     color: #ff3165;
 //   }
-//   @media screen and (max-width: 768px) {
+//   @media screen and (max-width: 767.98px) {
 //     display: none;
 //   }
 
@@ -133,6 +133,8 @@
   // margin-top: 56px;
   // margin-left: auto;
   // margin-right: auto;
+  transition: background-color var(--duration) var(--timing-function),
+    color var(--duration) var(--timing-function);
 
   &:hover,
   &:focus {
@@ -140,7 +142,7 @@
     color: #ff3165;
   }
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 767.98px) {
     display: none;
   }
 
@@ -195,6 +197,8 @@
   color: #ffffff;
   padding-top: 55px;
   padding-bottom: 55px;
+
+  transition: color var(--duration) var(--timing-function);
 
   &:hover,
   &:focus {
@@ -273,12 +277,14 @@
   border: none;
   text-decoration: none;
   border-radius: 20px;
+  cursor: pointer;
 }
 
 .white {
   background-color: #ffffff;
   width: 82.8px;
   height: 24px;
+  transition: background-color var(--duration) var(--timing-function);
 }
 
 .pink {
@@ -286,6 +292,7 @@
   width: 62.4px;
   height: 24px;
   margin-right: 8px;
+  transition: background-color var(--duration) var(--timing-function);
 }
 
 @media screen and (min-width: 1200px) {
@@ -601,9 +608,8 @@
 //   }
 // }
 
-
-.header__button{
-    animation: swing 6s ease-in-out infinite forwards;
+.header__button {
+  animation: swing 6s ease-in-out infinite forwards;
 }
 
 @keyframes swing {
