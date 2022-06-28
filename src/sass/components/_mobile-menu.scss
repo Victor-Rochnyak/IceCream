@@ -356,78 +356,55 @@
 }
 
 /* checkbox style */
-.modal-form__policy-group {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 35px;
-}
-
-.modal-form__custom-checkbox {
-  width: 20px;
-  height: 20px;
-  margin-right: 10px;
-
+.form__checkbox {
   display: flex;
   align-items: center;
   justify-content: center;
 
-  border-radius: 4px;
-  outline: 2px solid #ff6c00;
-  outline-offset: -2px;
+  cursor: pointer;
+}
+.form__custom-check {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
-  transition: background-color 300ms ease-in;
+  width: 16px;
+  height: 15px;
+
+  margin-right: 7px;
+
+  border: 2px solid #212121;
+  border-radius: 2px;
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-form__checkbox:checked + .modal-form__custom-checkbox {
-  background-color: #ff6c00;
-}
+.form__check {
+  fill: var(--first-color-text);
 
-.modal-form__custom-checkbox-icon {
-  fill: #ffffff;
   opacity: 0;
-  transition: opacity 300ms ease-in;
-}
 
-.modal-form__checkbox:checked
-  + .modal-form__custom-checkbox
-  .modal-form__custom-checkbox-icon {
-  opacity: 1;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.modal-form__policy-desc {
-  font-size: 16px;
-}
-
-.modal-form__policy-link {
-  color: #ff6c00;
-}
-
 /* payment checkbox */
-.modal-form__pay-type {
-  display: flex;
-  align-items: center;
-  margin-bottom: 20px;
+.form__checkbox-input {
+  width: 16px;
+  height: 15px;
+  background-color: #212121;
 }
 
-.modal-form__pay-group:not(:last-child) {
-  margin-right: 20px;
+.form__checkbox-input:checked + .form__custom-check {
+  background-color: var(--accent-color);
+  border-color: var(--accent-color);
+}
+.form__checkbox-input:focus + .form__custom-check,
+.form__checkbox-input:hover + .form__custom-check {
+  border-color: var(--accent-color);
 }
 
-.modal-form__pay-option {
-  fill: #ff6c00;
-  filter: grayscale(1);
-
-  transition: filter 400ms ease-in-out;
-}
-
-.modal-form__pay-checkbox:checked + .modal-form__pay-option {
-  filter: grayscale(0);
-}
-
-.modal-form__submit-btn {
-  display: block;
-  margin: 0 auto;
+.form__checkbox-input:checked + .form__custom-check .form__check {
+  opacity: 1;
 }
 
 .btn {
