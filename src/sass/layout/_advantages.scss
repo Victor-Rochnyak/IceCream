@@ -37,18 +37,16 @@
   @media screen and (min-width: 768px)  {
     
     &:nth-child(1) {
-      width: 180px;
-      margin-right: 4px;
+      
+      margin-right: 10px;
     }
 
     &:nth-child(2) {
-      width: 162px;
-      margin-right: 22px;
+     
+      margin-right: 10px;
     }
 
-    &:nth-child(3) {
-      width: 159px;
-    }
+    
   }
 
   @media screen and (min-width: 1200px) {
@@ -71,11 +69,13 @@
 .first::before {
   @media screen and (max-width: 767px){
   background-image: url(/src/images/advantages/first-sm@1x.png);
+ 
   
   }
 
     @media screen and (min-width: 768px) and (max-width: 1199px) {
       background-image: url(/src/images/advantages/first-md@1x.png);
+      background-position: center;
       
     }
 
@@ -93,6 +93,7 @@
 
         @media screen and (min-width: 768px) and (max-width: 1199px) {
           background-image: url(/src/images/advantages/second-md@1x.png);
+          background-position: center;
     
         }
     
@@ -111,6 +112,7 @@
 
         @media screen and (min-width: 768px) and (max-width: 1199px) {
           background-image: url(/src/images/advantages/third-md@1x.png);
+          background-position: center;
     
         }
     
@@ -133,12 +135,13 @@
   height: 56px;
   margin-bottom: 4px;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
     font-size: 48px;
     line-height: 1.14;
     letter-spacing: 0.04em;
-    width: 147px;
+    width: 100%;
     margin-bottom: 13px;
+    text-align: center;
   }
 
   @media screen and (min-width: 1200px) {
@@ -160,15 +163,7 @@
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     font-size: 14px;
     line-height: 174%;
-    &:nth-child(1) {
-      width: 180px;
-    }
-    &:nth-child(2) {
-      width: 162px;
-    }
-    &:nth-child(3) {
-      width: 159px;
-    }
+    text-align: center;
   }
   @media screen and (min-width: 1200px) {
             font-size: 16px;
