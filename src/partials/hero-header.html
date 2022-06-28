@@ -1,72 +1,134 @@
-  <!-- HEADER -->
-  <header class="header section">
-    <div class="container hero-container">
-      <a href="./index.html" class="logo-link">
-        <img src="./images/logo.svg" alt="Логотип" />
-      </a>
-      <!-- DSEKTOP-NAVIGATION -->
-      <ul class="nav-desktop-list">
-        <li class="nav-desktop-list__item">
-          <a href="" class="nav-desktop-list__link">Home</a>
+<!-- HEADER -->
+<header class="section header" id="header">
+  <div class="container hero-container">
+    <a href="./index.html" class="logo-link">
+      <picture>
+        <source
+          media="(min-width: 320px)"
+          srcset="
+            ./images/header-hero/Logo.png    1x,
+            ./images/header-hero/Logo@2x.png 2x
+          "
+          type="image/png"
+        />
+        <img
+          src="./images/header-hero/Logo.png"
+          alt="Логотип"
+          width="199"
+          height="50"
+        />
+      </picture>
+    </a>
+
+    <!-- DSEKTOP-NAVIGATION -->
+    <ul
+      class="nav-desktop-list"
+      data-aos="fade-down"
+      data-aos-easing="ease"
+      data-aos-duration="1000"
+    >
+      <li class="nav-desktop-list__item">
+        <a href="#header" class="nav-desktop-list__link">Home</a>
+      </li>
+      <li class="nav-desktop-list__item">
+        <a href="#costumer" class="nav-desktop-list__link">About us</a>
+      </li>
+      <li class="nav-desktop-list__item">
+        <a href="#about" class="nav-desktop-list__link">How it’s made?</a>
+      </li>
+      <li class="nav-desktop-list__item">
+        <a href="#products" class="nav-desktop-list__link">Our products</a>
+      </li>
+      <li class="nav-desktop-list__item">
+        <a href="#contacts" class="nav-desktop-list__link">Contact</a>
+      </li>
+    </ul>
+    <!-- BURGER -->
+    <button class="burger-button" type="button" data-menu-open>
+      <span class="burger-button-container">
+        <span class="burger-button-container__line-top"></span>
+        <span class="burger-button-container__line-midle"></span>
+        <span class="burger-button-container__line-bottom"></span>
+      </span>
+    </button>
+    <!-- BUY-NOW -->
+    <button class="header__button" type="button">
+      Buy now
+      <svg class="header__button-icon" width="8" height="10">
+        <use href="./images/sprite.svg#icon-vector-new"></use>
+      </svg>
+    </button>
+  </div>
+</header>
+
+<!-- HERO -->
+<main>
+  <section class="hero container" id="hero">
+    <div class="decor-group">
+      <h1
+        class="hero__head"
+        data-aos="fade-right"
+        data-aos-duration="1000"
+        data-aos-easing="ease-in-sine"
+      >
+        ice cream made with <span class="hero__head-span">passion</span>
+      </h1>
+      <ul class="amount-list">
+        <li class="amount-list__item">
+          <span class="amount-list__text">16</span>
         </li>
-        <li class="nav-desktop-list__item">
-          <a href="" class="nav-desktop-list__link">About us</a>
-        </li>
-        <li class="nav-desktop-list__item">
-          <a href="" class="nav-desktop-list__link">How it’s made?</a>
-        </li>
-        <li class="nav-desktop-list__item">
-          <a href="" class="nav-desktop-list__link">Our products</a>
-        </li>
-        <li class="nav-desktop-list__item">
-          <a href="" class="nav-desktop-list__link">Contact</a>
+        <li class="amount-list__item">
+          <span class="amount-list__text">23</span>
         </li>
       </ul>
-      <!-- BURGER -->
-      <button class="burger-buton" type="button">
-        <span class="burger-buton-container" >
-          <span class="burger-button-container__line-top"></span>
-          <span class="burger-button-container__line-midle"></span>
-          <span class="burger-button-container__line-bottom"></span>
-        </span>
-      </button>
-      <!-- BUY-NOW -->
-      <button class="header__buttom" type="button">
-        Buy now
-        <svg class="header__button-icon" width="8" height="10">
-          <use href="./images/sprite-modal.svg#icon-vector"></use>
+    </div>
+    <ul class="hero__head-list list">
+      <li class="hero__head-item pink">
+        <a class="hero__head-link left" href="#products">Products</a>
+      </li>
+      <li class="hero__head-item white">
+        <a class="hero__head-link right" href="#about">How it’s made?</a>
+      </li>
+    </ul>
+    <p class="hero__item">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+      tempor incididunt ut labore et
+    </p>
+
+    <!-- модальное окно -->
+    <div class="mobyle__menu" data-menu>
+      <button type="button" class="form__button-close" data-menu-close>
+        <svg class="form__close-icon" width="14" height="14">
+          <use href="./images/sprite-modal.svg#icon-close-mobile"></use>
         </svg>
       </button>
+
+      <button class="mobyle__buy-now" type="button">
+        <span class="buy-now">Buy now</span>
+        <svg class="mobyla__buy-icon" width="10" height="15">
+          <use
+            class="mobyla__more-icon"
+            href="./images/sprite-modal.svg#icon-Vector"
+          ></use>
+        </svg>
+      </button>
+      <ul class="mobyle__nav">
+        <li class="mobyle__nav-item">
+          <a href="" class="mobyle__link mobyle__link--home link">Home</a>
+        </li>
+        <li class="mobyle__nav-item">
+          <a href="" class="mobyle__link link">About us</a>
+        </li>
+        <li class="mobyle__nav-item">
+          <a href="" class="mobyle__link link">How it’s made?</a>
+        </li>
+        <li class="mobyle__nav-item">
+          <a href="#products" class="mobyle__link link">Our products</a>
+        </li>
+        <li class="mobyle__nav-item">
+          <a href="" class="mobyle__link link">Contact</a>
+        </li>
+      </ul>
     </div>
-  </header>
-  
-  <!-- HERO -->
-  <main>
-    <section class="hero container">
-      <div class="decor-group">
-        <h1 class="hero__head">
-          ice cream made with <span class="hero__head-span">passion</span>
-        </h1>
-        <ul class="amount-list">
-          <li class="amount-list__item">
-            <span class="amount-list__text">16</span>
-          </li>
-          <li class="amount-list__item">
-            <span class="amount-list__text">23</span>
-          </li>
-        </ul>
-      </div>
-        <ul class="hero__head-list list">
-          <li class="hero__head-item pink">
-            <a class="hero__head-link left" href="#">Products</a>
-          </li>
-          <li class="hero__head-item white">
-            <a class="hero__head-link right" href="#">How it’s made?</a>
-          </li>
-        </ul>
-      <p class="hero__item">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et
-      </p>
-    </section>
-  </main>
+  </section>
+</main>

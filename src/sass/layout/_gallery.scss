@@ -1,3 +1,26 @@
+.gallery {
+    //height: 250px;
+    //padding-top: 30px;
+    padding-bottom: 60px;
+    background-image: linear-gradient(to bottom,
+            var(--footer-bg-color) 30%,
+            white 30%);
+
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        background-image: linear-gradient(to bottom,
+                var(--footer-bg-color) 55%,
+                white 55%);
+    }
+
+    @media screen and (min-width: 1200px) {
+        //padding-top: 60px;
+        padding-bottom: 120px;
+        background-image: linear-gradient(to bottom,
+                var(--footer-bg-color) 28%,
+                white 28%);
+    }
+}
+
 .grid {
     margin-left: auto;
     margin-right: auto;

@@ -1,66 +1,123 @@
-<section class="section section__about">
-  <div class="container">
-    <p class="about__label">Tradition and love</p>
-    <h2 class="about__title">How it's made?</h2>
-    <div class="about__main">
-      <picture class="about__image">
-        <!-- Desktop -->
-        <source
-          media="(min-width: 1200px)"
-          srcset="
-            ./images/about/about-lg.png    1x,
-            ./images/about/about-lg@2x.png 2x
-          "
-          1x
-          type="image/png"
-        />
+<section class="section section__about" id="about">
+  <div class="container container__about">
+    <div class="about">
+      <p
+        class="about__label"
+        data-aos="zoom-in-down"
+        data-aos-duration="1500"
+        data-aos-easing="ease"
+      >
+        Tradition and love
+      </p>
+      <h2
+        class="about__title"
+        data-aos="zoom-in-down"
+        data-aos-duration="1500"
+        data-aos-easing="ease"
+      >
+        How it's made?
+      </h2>
+      <div class="about__main">
+        <picture
+          class="about__image"
+          data-aos="zoom-in-down"
+          data-aos-duration="1500"
+          data-aos-easing="ease"
+        >
+          <!-- Desktop -->
+          <source
+            media="(min-width: 1200px)"
+            srcset="
+              ./images/about/about-lg.png    1x,
+              ./images/about/about-lg@2x.png 2x
+            "
+            type="image/png"
+          />
 
-        <!-- Tablet -->
-        <source
-          media="(min-width: 768px)"
-          srcset="
-            ./images/about/about-md.png    1x,
-            ./images/about/about-md@2x.png 2x
-          "
-          1x
-          type="image/png"
-        />
+          <!-- Tablet -->
+          <source
+            media="(min-width: 768px)"
+            srcset="
+              ./images/about/about-md.png    1x,
+              ./images/about/about-md@2x.png 2x
+            "
+            type="image/png"
+          />
 
-        <source
-          media="(max-width: 767.98px)"
-          srcset="
-            ./images/about/about-sm.png    1x,
-            ./images/about/about-sm@2x.png 2x
-          "
-          1x
-          type="image/png"
-        />
-        <img src="./images/about/about-sm.png" alt="Cow and milk" />
-      </picture>
+          <source
+            media="(max-width: 767.98px)"
+            srcset="
+              ./images/about/about-sm.png    1x,
+              ./images/about/about-sm@2x.png 2x
+            "
+            type="image/png"
+          />
+          <img src="./images/about/about-sm.png" alt="Cow and milk" />
+        </picture>
 
-      <div class="about__undertext">
-        <div class="overlay">
-          <p class="about__text-first">
-            Fusce ut velit laoreet, tempus arcu eu, molestie tortor. Nam vel
-            justo cursus, faucibus lorem eget, egestas eros. Maecenas eleifend
-            erat at justo fringilla.
-          </p>
-          <p class="about__text-second">
-            Curabitur lacinia enim at ex blandit, vel pellentesque odio
-            elementum. Mauris rhoncus orci in imperdiet placerat. Vestibulum
-            euismod nisl suscipit ligula volutpat, a feugiat urna maximus. Cras
-            massa nibh, tincidunt. <br />
-            <br />
-            Aliquam erat volutpat. Aenean accumsan.
-          </p>
-          <button class="button">
+        <div
+          class="about__undertext"
+          data-aos="zoom-in-down"
+          data-aos-duration="1500"
+          data-aos-easing="ease"
+        >
+          <ul class="overlay">
+            <li class="about__text-first">
+              <p>
+                Fusce ut velit laoreet, tempus arcu eu, molestie tortor. Nam vel
+                justo cursus, faucibus lorem eget, egestas eros. Maecenas
+                eleifend erat at justo fringilla.
+              </p>
+            </li>
+            <li class="about__text-second">
+              <p>
+                Curabitur lacinia enim at ex blandit, vel pellentesque odio
+                elementum. Mauris rhoncus orci in imperdiet placerat. Vestibulum
+                euismod nisl suscipit ligula volutpat, a feugiat urna maximus.
+                Cras massa nibh, tincidunt. <br />
+                <br />
+                Aliquam erat volutpat. Aenean accumsan.
+              </p>
+            </li>
+          </ul>
+          <button class="button" data-read-open>
             Read more
-            <svg class="header__button-icon" width="4.68" height="8">
-              <use href="./images/sprite-modal.svg#icon-vector"></use>
+            <svg class="header__button-icon" width="8" height="10">
+              <use href="./images/sprite.svg#icon-vector-new"></use>
             </svg>
           </button>
         </div>
       </div>
     </div>
   </div>
+
+  <!-- Модальне вікно -->
+  <div class="backdrop is-hidden" data-read>
+    <div class="modal">
+      <button class="button-modal" data-read-close> <svg
+          class="franchise__modal-btn-focus"
+          xmlns="http://www.w3.org/2000/svg"
+          viewbox="0 0 320 512"
+          width="18"
+          height="18"
+        >
+          <path
+            d="M310.6 361.4c12.5 12.5 12.5 32.75 0 45.25C304.4 412.9 296.2 416 288 416s-16.38-3.125-22.62-9.375L160 301.3L54.63 406.6C48.38 412.9 40.19 416 32 416S15.63 412.9 9.375 406.6c-12.5-12.5-12.5-32.75 0-45.25l105.4-105.4L9.375 150.6c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L160 210.8l105.4-105.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-105.4 105.4L310.6 361.4z"
+          />
+        </svg></button>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        Doloremque odio modi natus deserunt non at illo ipsam ipsa
+         molestias! Sit nihil libero ipsa maiores, quae neque debitis 
+         molestias iste? Quaerat. Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        Doloremque odio modi natus deserunt non at illo ipsam ipsa
+         molestias! Sit nihil libero ipsa maiores, quae neque debitis 
+         molestias iste? Quaerat.</p>
+        
+
+
+        
+      </form>
+    </div>
+  </div>
+  <script src="./js/about.js"></script>
 </section>

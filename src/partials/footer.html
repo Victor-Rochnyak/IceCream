@@ -2,7 +2,12 @@
   <div class="container footer-container">
     <!-- логотип -->
 
-    <div class="footer-logo">
+    <div
+      class="footer-logo"
+      data-aos="zoom-in-down"
+      data-aos-duration="1500"
+      data-aos-easing="ease"
+    >
       <p class="footer-logo__title">
         homemade ice cream <span class="footer-logo__made">made</span>
       </p>
@@ -12,7 +17,12 @@
 
     <!-- соц. иконки -->
 
-    <div class="footer__contact">
+    <div
+      class="footer__contact"
+      data-aos="zoom-in-down"
+      data-aos-duration="1500"
+      data-aos-easing="ease"
+    >
       <ul class="footer__list">
         <li class="footer__item">
           <a
@@ -70,3 +80,24 @@
     </p>
   </div>
 </footer>
+
+<!-- гугл карта -->
+
+<div class="location is-hidden" data-location>
+  <div class="location__map">
+    <button class="location__close-btn" data-location-close>
+      <svg class="location__close-iconc" width="11px" height="11px">
+        <use href="./images/sprite-modal.svg#icon-close"></use>
+      </svg>
+    </button>
+
+    <iframe
+      class="google__map"
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2541.867960912443!2d30.5322611157445!3d50.42493167947185!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cf1a98f591a5%3A0xb201d076928c804e!2z0YPQuy4g0JXQstCz0LXQvdC40Y8g0JrQvtC90L7QstCw0LvRjNGG0LAsIDM2LCDQmtC40LXQsiwgMDExMzM!5e0!3m2!1sru!2sua!4v1656287770092!5m2!1sru!2sua"
+      style="border: 0"
+      allowfullscreen=""
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"
+    ></iframe>
+  </div>
+</div>

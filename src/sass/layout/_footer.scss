@@ -1,14 +1,15 @@
 .footer {
-  background: var(--footer-bg-color);
+  // background: var(--footer-bg-color);
 }
 
 .footer-container {
   display: flex;
   flex-direction: column;
-  padding-top: 40px;
   padding-bottom: 40px;
+  padding-top: 40px;
 
   border-bottom: 1px solid #e1e1e1;
+  background: var(--footer-bg-color);
 
   @media screen and (min-width: 768px) {
     flex-direction: row;
@@ -16,9 +17,9 @@
     align-items: flex-end;
   }
 
-  @media screen and (min-width: 1280px) {
-    padding-top: 120px;
+  @media screen and (min-width: 1200px) {
     padding-bottom: 60px;
+    padding-top: 121px;
   }
 }
 
@@ -54,7 +55,7 @@
     letter-spacing: 0.04em;
   }
 
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: 1200px) {
     margin-bottom: 16px;
   }
 }
@@ -62,7 +63,7 @@
 .footer-logo__made {
   display: block;
 
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: 1200px) {
     display: inline;
   }
 }
@@ -88,7 +89,7 @@
     letter-spacing: 0.06em;
   }
 
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: 1200px) {
     width: 474px;
   }
 }
@@ -104,6 +105,40 @@
   display: flex;
   justify-content: flex-end;
   margin-bottom: 40px;
+}
+
+.footer__item {
+  position: relative;
+}
+
+.footer__link:hover::before,
+.footer__link:hover::after {
+  content: '';
+  position: absolute;
+  border: 1px solid var(--accent-color);
+  left: -20px;
+  right: -20px;
+  top: -20px;
+  bottom: -20px;
+  border-radius: 50px;
+  animation: footer__item 1.8s linear infinite;
+}
+
+.footer__link:hover:after {
+  animation-delay: 1s;
+}
+
+@keyframes footer__item {
+  0% {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1.2);
+  }
 }
 
 .footer__link {
@@ -144,7 +179,7 @@
     font-size: 14px;
   }
 
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: 1200px) {
     font-size: 16px;
   }
 }
@@ -163,7 +198,7 @@
     font-size: 14px;
   }
 
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: 1200px) {
     font-size: 16px;
   }
 }
@@ -189,4 +224,77 @@
   @media screen and (min-width: 768px) {
     display: inline;
   }
+}
+
+// гугл карта
+
+.location.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
+}
+
+.location {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1000;
+}
+
+.location__map {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 320px;
+  height: 450px;
+  border: 5px solid var(--accent-color);
+  border-radius: 20px;
+  @media screen and (min-width: 768px) {
+    width: 450px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 600px;
+  }
+}
+
+.location__close-btn {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  padding: 0;
+  background-color: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  cursor: var(--cursor);
+
+  outline: transparent;
+
+  &:hover,
+  &:focus {
+    border: 1px solid var(--accent-color);
+  }
+}
+
+.location__close-iconc {
+  fill: #212121;
+}
+
+.location__close-btn:hover .location__close-iconc,
+.location__close-btn:focus .location__close-iconc {
+  fill: var(--accent-color);
+}
+
+.google__map {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
 }
