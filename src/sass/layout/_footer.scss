@@ -252,6 +252,7 @@
   height: 450px;
   border: 5px solid var(--accent-color);
   border-radius: 20px;
+
   @media screen and (min-width: 768px) {
     width: 450px;
   }
@@ -274,7 +275,6 @@
   background-color: #ffffff;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
-  cursor: var(--cursor);
 
   outline: transparent;
 

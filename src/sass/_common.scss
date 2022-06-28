@@ -1,10 +1,15 @@
 @import '~node_modules/modern-normalize/modern-normalize.css';
 
 body {
-    font-family: var(--main-font);
-    min-width: 320px;
-
+  font-family: var(--main-font);
+  min-width: 320px;
 }
-html{
-    scroll-behavior: smooth;
+
+html {
+  scroll-behavior: smooth;
+}
+
+a,
+button {
+  cursor: pointer;
 }
