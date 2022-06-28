@@ -279,3 +279,35 @@
   transition: transform var(--duration) var(--timing-function),
     -webkit-transform var(--duration) var(--timing-function);
 }
+
+
+
+// <!-- Franchise modal -->
+
+ 
+.scroll-to-top {
+  position: fixed;
+  bottom: 90px;
+  right: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  background-color: #E17992;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  -webkit-animation: slide-top 1s linear 2s infinite alternate both;
+  animation: slide-top 1s linear 2s infinite alternate both;
+}
+
+.arrow-top {
+  fill: #fff;
+}
