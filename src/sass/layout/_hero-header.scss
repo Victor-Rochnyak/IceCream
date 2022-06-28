@@ -26,7 +26,7 @@
   }
 }
 
-.burger-buton {
+.burger-button {
   width: 20px;
   height: 12px;
 
@@ -75,44 +75,6 @@
   background-color: var(--accent-color);
 }
 
-// .buy-now {
-//   display: flex;
-//   align-items: center;
-//   justify-content: center;
-//   margin-left: 32px;
-
-//   width: 160px;
-//   height: 45px;
-//   background-color: var(--first-color-text);
-//   border-radius: 22px;
-
-//   &:hover,
-//   &:focus {
-//     background-color: #ecebeb;
-//     color: #ff3165;
-//   }
-//   @media screen and (max-width: 767.98px) {
-//     display: none;
-//   }
-
-//   @media screen and (min-width: 768px) {
-//     margin-top: 32px;
-//   }
-
-//   @media screen and (min-width: 1200px) {
-//     margin-top: 40px;
-//     margin-left: auto;
-//   }
-// }
-
-// .buy-now__text {
-//   font-weight: 700;
-//   font-size: 16px;
-//   line-height: 21px;
-
-//   color: var(--accent-color);
-// }
-
 .header__button {
   font-weight: 700;
   font-size: 16px;
@@ -129,10 +91,7 @@
   min-height: 44px;
   max-width: 180px;
   min-width: 160px;
-  // margin-bottom: 22px;
-  // margin-top: 56px;
-  // margin-left: auto;
-  // margin-right: auto;
+
   transition: background-color var(--duration) var(--timing-function),
     color var(--duration) var(--timing-function);
 
@@ -528,85 +487,6 @@
     letter-spacing: 0.04em;
   }
 }
-
-// .header__button {
-//   animation-duration: 1s ;
-//   animation-name: shake-lr;
-//   animation-delay: 2s;
-//   animation-iteration-count: infinite;
-// }
-
-// .header__button:hover,
-// .header__button:focus {
-//   animation-play-state: paused;
-// }
-
-// @-webkit-keyframes shake-lr {
-//   0%,
-//   100% {
-//     -webkit-transform: rotate(0deg);
-//     transform: rotate(0deg);
-//     -webkit-transform-origin: 50% 50%;
-//     transform-origin: 50% 50%;
-//   }
-//   10% {
-//     -webkit-transform: rotate(1deg);
-//     transform: rotate(1deg);
-//   }
-//   20%,
-//   40%,
-//   60% {
-//     -webkit-transform: rotate(-3deg);
-//     transform: rotate(-3deg);
-//   }
-//   30%,
-//   50%,
-//   70% {
-//     -webkit-transform: rotate(3deg);
-//     transform: rotate(3deg);
-//   }
-//   80% {
-//     -webkit-transform: rotate(-1deg);
-//     transform: rotate(-1deg);
-//   }
-//   90% {
-//     -webkit-transform: rotate(1deg);
-//     transform: rotate(1deg);
-//   }
-// }
-// @keyframes shake-lr {
-//   0%,
-//   100% {
-//     -webkit-transform: rotate(0deg);
-//     transform: rotate(0deg);
-//     -webkit-transform-origin: 50% 50%;
-//     transform-origin: 50% 50%;
-//   }
-//   10% {
-//     -webkit-transform: rotate(1deg);
-//     transform: rotate(1deg);
-//   }
-//   20%,
-//   40%,
-//   60% {
-//     -webkit-transform: rotate(-3deg);
-//     transform: rotate(-3deg);
-//   }
-//   30%,
-//   50%,
-//   70% {
-//     -webkit-transform: rotate(3deg);
-//     transform: rotate(3deg);
-//   }
-//   80% {
-//     -webkit-transform: rotate(-1deg);
-//     transform: rotate(-1deg);
-//   }
-//   90% {
-//     -webkit-transform: rotate(1deg);
-//     transform: rotate(1deg);
-//   }
-// }
 
 .header__button {
   animation: swing 6s ease-in-out infinite forwards;
