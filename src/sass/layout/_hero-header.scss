@@ -7,6 +7,7 @@
 }
 
 .hero-container {
+  position: relative;
   display: flex;
   align-items: center;
 }
@@ -574,5 +575,47 @@
     .icon-arrow {
       fill: var(--first-color-text);
     }
+  }
+}
+
+.icon-man-cart {
+  position: absolute;
+  opacity: 0;
+  fill: var(--accent-color);
+
+  transform: translateX(-500px);
+  transition: transform 3000ms;
+
+  @media screen and (min-width: 1200px) {
+    bottom: -130px;
+    left: -9px;
+  }
+}
+
+.hero__item:hover .icon-man-cart {
+  animation: run 3s ease-in-out forwards;
+}
+
+@keyframes run {
+  0% {
+    transform: translateX(-300px);
+  }
+
+  10% {
+    transform: translateX(-300x);
+    opacity: 1;
+  }
+
+  30% {
+    transform: translateX(0px);
+  }
+
+  60% {
+    opacity: 1;
+  }
+
+  100% {
+    transform: translateX(1000px);
+    opacity: 0;
   }
 }
