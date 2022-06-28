@@ -1,5 +1,4 @@
-
-  <!-- HEADER -->
+<!-- HEADER -->
 <header class="section header" id="header">
   <div class="container hero-container">
     <a href="./index.html" class="logo-link">
@@ -45,7 +44,7 @@
       </li>
     </ul>
     <!-- BURGER -->
-    <button class="burger-buton" type="button">
+    <button class="burger-buton" type="button" data-menu-open>
       <span class="burger-buton-container">
         <span class="burger-button-container__line-top"></span>
         <span class="burger-button-container__line-midle"></span>
@@ -95,6 +94,41 @@
       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
       tempor incididunt ut labore et
     </p>
+
+    <!-- модальное окно -->
+    <div class="mobyle__menu" data-menu>
+      <button type="button" class="form__button-close" data-menu-close>
+        <svg class="form__close-icon" width="14" height="14">
+          <use href="./images/sprite-modal.svg#icon-close-mobile"></use>
+        </svg>
+      </button>
+
+      <button class="mobyle__buy-now" type="button">
+        <span class="buy-now">Buy now</span>
+        <svg class="mobyla__buy-icon" width="10" height="15">
+          <use
+            class="mobyla__more-icon"
+            href="./images/sprite-modal.svg#icon-Vector"
+          ></use>
+        </svg>
+      </button>
+      <ul class="mobyle__nav">
+        <li class="mobyle__nav-item">
+          <a href="" class="mobyle__link mobyle__link--home link">Home</a>
+        </li>
+        <li class="mobyle__nav-item">
+          <a href="" class="mobyle__link link">About us</a>
+        </li>
+        <li class="mobyle__nav-item">
+          <a href="" class="mobyle__link link">How it’s made?</a>
+        </li>
+        <li class="mobyle__nav-item">
+          <a href="#products" class="mobyle__link link">Our products</a>
+        </li>
+        <li class="mobyle__nav-item">
+          <a href="" class="mobyle__link link">Contact</a>
+        </li>
+      </ul>
+    </div>
   </section>
 </main>
-
