@@ -306,8 +306,7 @@
     background-image: url('../images/header-hero/header-pic1-md.png'),
       url('../images/header-hero/header-pic2-md.png'),
       url('../images/hero-header/Ellipse3.png'),
-      url('../images/header-hero/header-pic3-md.png'),
-      url('../images/hero-header/arrow-right3.png');
+      url('../images/header-hero/header-pic3-md.png');
 
     @media screen and (min-device-pixel-ratio: 2),
       screen and (min-resolution: 192dpi),
@@ -315,14 +314,13 @@
       background-image: url('../images/header-hero/header-pic1-md@2x.png'),
         url('../images/header-hero/header-pic2-md@2x.png'),
         url('../images/hero-header/Ellipse-md@2x.png'),
-        url('../images/header-hero/header-pic3-md@2x.png'),
-        url('../images/hero-header/arrow-right-md@2x.png');
+        url('../images/header-hero/header-pic3-md@2x.png');
     }
 
-    background-size: 143px, 209px, 335px, 154px, 18px, cover;
+    background-size: 143px, 209px, 335px, 154px, cover;
     background-repeat: no-repeat;
     background-position: left 322px top 80px, left 546px top 256px,
-      left 248px top 43px, left 32px top 246px, top 342px left 184px;
+      left 248px top 43px, left 32px top 246px;
   }
 
   .hero__head {
@@ -364,8 +362,7 @@
     background-image: url('../images/header-hero/header-pic1-lg.png'),
       url('../images/header-hero/header-pic2-lg.png'),
       url('../images/hero-header/Ellipse3.png'),
-      url('../images/header-hero/header-pic3-lg.png'),
-      url('../images/hero-header/arrow-right3.png');
+      url('../images/header-hero/header-pic3-lg.png');
 
     @media screen and (min-device-pixel-ratio: 2),
       screen and (min-resolution: 192dpi),
@@ -373,14 +370,13 @@
       background-image: url('../images/header-hero/header-pic1-lg@2x.png'),
         url('../images/header-hero/header-pic2-lg@2x.png'),
         url('../images/hero-header/Ellipse-lg@2x.png'),
-        url('../images/header-hero/header-pic3-lg@2x.png'),
-        url('../images/hero-header/arrow-right-lg@2x.png');
+        url('../images/header-hero/header-pic3-lg@2x.png');
     }
 
-    background-size: 236px, 304px, 543px, 213px, 26px, cover;
+    background-size: 236px, 304px, 543px, 213px, cover;
     background-repeat: no-repeat;
     background-position: left 636px top 108px, left 880px top 423px,
-      left 517px top 54px, left 16px top 388px, top 554px left 229px;
+      left 517px top 54px, left 16px top 388px;
   }
 
   .hero__head {
@@ -560,5 +556,24 @@
 
   to {
     transform: translateY(5px);
+  }
+}
+
+
+.button-circle {
+  margin-top: 20px;
+  display: block;
+  width: 26px;
+  height: 26px;
+  border-color: transparent;
+  border-radius: 50%;
+  cursor: pointer;
+  background-color: var(--first-color-text);
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+    .icon-arrow {
+      fill: var(--first-color-text);
+    }
   }
 }
