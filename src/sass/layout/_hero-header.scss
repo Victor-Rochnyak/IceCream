@@ -604,7 +604,7 @@
 
     @keyframes run {
       0% {
-        transform: translateX(-300px);
+        transform: translateX(-150px);
       }
 
       10% {
@@ -621,7 +621,7 @@
       }
 
       100% {
-        transform: translateX(700px);
+        transform: translateX(500px);
         opacity: 0;
       }
     }
@@ -633,7 +633,7 @@
 
     @keyframes run {
       0% {
-        transform: translateX(-300px);
+        transform: translateX(-150px);
       }
 
       10% {
@@ -650,7 +650,7 @@
       }
 
       100% {
-        transform: translateX(1000px);
+        transform: translateX(800px);
         opacity: 0;
       }
     }
