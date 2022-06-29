@@ -149,15 +149,16 @@
 .costumer__infoslider-pagination {
     display: flex;
     justify-content: center;
-    margin-bottom: 60px;
+    align-items: center;
+    padding-bottom: 60px;
 
     @media screen and (min-width: 768px) {
-        margin-bottom: 80px;
+        padding-bottom: 80px;
 
     }
 
     @media screen and (min-width: 1200px) {
-        margin-bottom: 120px;
+        padding-bottom: 120px;
 
     }
 
@@ -177,6 +178,8 @@
 
 .costumer__infoslider-item.current {
     background-color: inherit;
+    display: flex;
+    align-items: center;
 }
 
 .costumer__infoslider-icon {

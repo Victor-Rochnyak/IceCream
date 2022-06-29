@@ -80,7 +80,7 @@
   top: 0;
   right: 0;
 
-  z-index: 100;
+  z-index: 10;
 
   padding-top: 60px;
 
@@ -92,7 +92,7 @@
 
   color: #d41443;
 
-  max-width: 480px;
+  max-width: 250px;
 
   @media screen and (min-width: 768px) {
     max-width: 300px;
@@ -128,6 +128,9 @@
 }
 
 .mobyle__link {
+  padding: 12px 0;
+  padding-left: 20px;
+
   font-family: 'DM Sans';
   font-style: normal;
   font-weight: 700;
@@ -143,8 +146,8 @@
 }
 
 .mobyle__nav-item {
-  padding: 12px 0;
-  padding-left: 20px;
+  // padding: 12px 0;
+  // padding-left: 20px;
   width: 100%;
 
   &:nth-child(2n + 1) {
@@ -153,65 +156,312 @@
   }
 }
 
-// @media screen and(max-width:767.98px) {
-//   .mobyle__menu {
-//     position: fixed;
-//     top: 0;
-//     right: 0;
-//     width: 250px;
-//     height: 100vh;
-//     background-color: #e17992;
-//     z-index: 10;
+//  модальне вікно Купити зараз
+/**
+  |============================
+  | modal form
+  |============================
+*/
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 2000;
 
-//     transform: translateX(100%);
-//     padding: 60 20 171;
-//   }
-// }
+  transition: opacity var(--fast-anim), visibility var(--fast-anim);
+}
 
-// .mobyle__menu {
-//   position: fixed;
-//   top: 0;
-//   right: 0;
-//   width: 250px;
-//   height: 100vh;
-//   background-color: #e17992;
-//   z-index: 10;
+.backdrop.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
 
-//   transform: translateX(100%);
-//   padding: 60 20 171;
-// }
+.modal-wrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  max-width: 400px;
 
-// .mobyle__menu.is-open {
-//   transform: translateX(0);
-// }
-// .form__button-close {
-//   position: absolute;
-//   top: 22px;
-//   right: 17px;
-//   background: transparent;
-//   border: 0;
-// }
+  @media screen and (min-width: 768px) {
+    max-width: 500px;
+  }
+  width: 100%;
+  padding: 25px;
+  z-index: 2000;
 
-// .mobyle__buy-now {
-//   width: 209px;
-//   height: 44px;
-//   background: #ffffff;
-//   border-radius: 22px;
-//   border: 0;
-// }
-// .mobyla__buy-icon {
-//   margin-left: 19px;
-// }
+  background-color: var(--secondary-bg-color);
+  border-radius: 10px;
 
-// .buy-now {
-//   font-family: 'DM Sans';
-//   font-style: normal;
-//   font-weight: 700;
-//   font-size: 16px;
-//   line-height: 21px;
+  transition: transform 300ms ease-in-out 200ms, opacity 300ms ease-in-out 200ms;
+}
+.modal-wrapper__choose-ice {
+  margin-bottom: 15px;
 
-//   align-items: center;
-//   text-align: center;
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.29;
 
-//   color: #d41443;
-// }
+  color: #303030;
+}
+/* початковий стан елемента перед анімацією */
+.backdrop.is-hidden .modal-wrapper {
+  transform: translate(-50%, -50%) scale(0.4);
+  opacity: 0;
+}
+
+/* кінцевий стан елемента після анімації */
+.backdrop .modal-wrapper {
+  transform: translate(-50%, -50%) scale(1);
+  opacity: 1;
+}
+
+.modal-wrapper__btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  padding: 0;
+
+  border: 1px solid var(--accent-color);
+  border-radius: 50%;
+  // background-color: transparent;
+  background-color: var(--secondary-bg-color);
+
+  cursor: pointer;
+}
+
+.modal__close-icon--buy {
+  fill: #df1313;
+}
+
+.modal-wrapper__choos {
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.29;
+
+  color: #303030;
+
+  &:nth-child(2n + 1) {
+    margin-left: 30px;
+  }
+}
+
+.modal-wrapper__input {
+  width: 60px;
+  padding: 6px 6px;
+
+  border-radius: 5px;
+  border: 1px solid #191c26;
+  outline: transparent;
+}
+
+.modal-wrapper__icecream--img {
+  display: block;
+  border-radius: 10px;
+  box-shadow: 2px 1px 2px 2px #908d8d;
+}
+
+/* modal form */
+.modal-title {
+  display: block;
+  font-size: 20px;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 25px;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.31;
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  justify-content: center;
+
+  color: var(--accent-color);
+}
+.modal-wrapper__price {
+  margin-bottom: 30px;
+}
+
+.modal-form__group {
+  position: relative;
+  display: block;
+  margin-bottom: 20px;
+}
+
+.modal-form__label {
+  position: relative;
+  display: inline-block;
+
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.29;
+
+  color: #303030;
+}
+
+.modal-form__label:before {
+  content: '\002A';
+  position: absolute;
+  top: 0;
+  right: -12px;
+  color: #e22f37;
+}
+
+/* Стилізація інпута */
+.modal-form__input {
+  width: 100%;
+  padding: 12px 40px;
+
+  border-radius: 5px;
+  border: 1px solid #191c26;
+  outline: transparent;
+}
+
+.modal-form__input:invalid:not(:placeholder-shown) {
+  border-color: #e22f37;
+}
+
+.modal-form__input:valid:not(:placeholder-shown) {
+  border-color: #69e883;
+}
+
+/* Стилізація іконок на інпуті */
+.modal-form__icon {
+  position: absolute;
+  bottom: 12px;
+  left: 10px;
+
+  fill: #303030;
+  transition: fill 400ms ease-in-out;
+
+  .modal-form__input:focus ~ & {
+    fill: #fc0909;
+  }
+
+  .modal-form__input:valid:not(:placeholder-shown) ~ & {
+    fill: #69e883;
+  }
+
+  .modal-form__input:invalid:not(:placeholder-shown) ~ & {
+    fill: #e22f37;
+  }
+}
+
+/* Стилізація попереджень для інпутів */
+.alert {
+  position: absolute;
+  bottom: -22px;
+  left: 10px;
+
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 10px;
+  letter-spacing: -0.6em;
+  opacity: 0;
+  transition: 400ms ease-out 100ms;
+}
+
+.alert--error {
+  color: #e22f37;
+}
+
+.alert--warning {
+  color: #fc0909;
+}
+
+.alert-icon {
+  position: absolute;
+  right: 10px;
+  bottom: 12px;
+  display: inline-flex;
+  fill: currentColor;
+  opacity: 0;
+  transform: scale(0.3);
+
+  transition: opacity 300ms ease-in-out 100ms, transform 300ms ease-in-out 100ms;
+}
+
+.alert-icon--warning {
+  fill: #fc0909;
+}
+
+.alert-icon--error {
+  fill: #e22f37;
+}
+
+.modal-form__input:focus ~ .alert--warning,
+.modal-form__input:focus ~ .alert-icon--warning {
+  letter-spacing: 0.01em;
+  opacity: 1;
+  transform: scale(1);
+}
+
+.modal-form__input:not(:placeholder-shown) ~ .alert--warning,
+.modal-form__input:not(:placeholder-shown) ~ .alert-icon--warning {
+  opacity: 0;
+}
+
+.modal-form__input:invalid:not(:placeholder-shown) ~ .alert--error,
+.modal-form__input:invalid:not(:placeholder-shown) ~ .alert-icon--error {
+  letter-spacing: 0.01em;
+  opacity: 1;
+  transform: scale(1);
+}
+
+.modal-wrapper__btn-submit {
+  padding: 12px 20px;
+  max-width: 200px;
+  min-width: 160px;
+  min-height: 40px;
+  margin-right: auto;
+  margin-left: auto;
+
+  font-family: inherit;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+
+  border: 1px solid var(--accent-color);
+  border-radius: 25px;
+  background-color: transparent;
+  cursor: pointer;
+
+  transition: background-color var(--duration);
+}
+.modal-form__submit-btn {
+  display: block;
+  margin: 0 auto;
+}
+
+//  Addres
+.form__text {
+  display: block;
+  margin-bottom: 4px;
+}
+.form__textarea {
+  height: 120px;
+  padding-left: 16px;
+  resize: none;
+}
