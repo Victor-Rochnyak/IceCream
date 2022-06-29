@@ -258,7 +258,6 @@
   transition: background-color var(--duration) var(--timing-function);
 }
 
-
 @media screen and (min-width: 1200px) {
   .white {
     background-color: #ffffff;
@@ -468,10 +467,25 @@
   }
 }
 
-.amount-list__text {
-  position: absolute;
-  top: 0;
-  right: 50%;
+.amount-list__group {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+
+  @media screen and (min-width: 768px) {
+    position: absolute;
+    top: 3px;
+    right: 45%;
+  }
+
+  @media screen and (min-width: 1200px) {
+    position: absolute;
+    top: 5px;
+    right: 50%;
+  }
+}
+
+.amount-list__number {
   font-family: 'Titan One';
   text-transform: uppercase;
   color: #d41443;
@@ -488,6 +502,42 @@
     font-size: 46px;
     line-height: 1, 4;
     letter-spacing: 0.04em;
+  }
+}
+
+.amount-list__text {
+  @media screen and (max-width: 1199.98px) {
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 8px;
+    line-height: 1.25px;
+    text-transform: lowercase;
+
+    color: #ffffff;
+    margin-top: 5px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.28px;
+    text-transform: lowercase;
+
+    color: #ffffff;
+    margin-top: 10px;
+  }
+}
+
+.amount-list__text--foodtrucks {
+  @media screen and (max-width: 1199.98px) {
+    width: 43px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 74px;
   }
 }
 
