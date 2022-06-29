@@ -1,6 +1,16 @@
 .section__advantages {
   background: #fff5f6;
   padding-bottom: 87px;
+  margin-right: auto;
+  margin-left: auto;
+  width: 1200px;
+  @media screen and (max-width: 767px) {
+      width: 100%;
+    }
+
+        @media screen and (min-width: 768px) and (max-width: 1199px){
+          width: 100%;
+        }
 }
 
 .advantages__list {
