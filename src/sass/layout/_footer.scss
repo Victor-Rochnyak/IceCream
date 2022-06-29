@@ -1,13 +1,13 @@
-.footer {
-  background: var(--footer-bg-color);
-}
-
 .footer-container {
   display: flex;
   flex-direction: column;
   padding-bottom: 40px;
+  padding-top: 40px;
+  padding-left: 20px;
+  padding-right: 20px;
 
   border-bottom: 1px solid #e1e1e1;
+  background: var(--footer-bg-color);
 
   @media screen and (min-width: 768px) {
     flex-direction: row;
@@ -17,6 +17,7 @@
 
   @media screen and (min-width: 1200px) {
     padding-bottom: 60px;
+    padding-top: 121px;
   }
 }
 
@@ -200,8 +201,35 @@
   }
 }
 
-// текст iceCream
+// текст коопиратор
 
+.copirator {
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
+  width: 100%;
+
+  background: var(--footer-bg-color);
+
+  @media screen and (min-width: 480px) {
+    //@include mq(mobile) {
+    width: 480px;
+  }
+
+  @media screen and (min-width: 768px) {
+    //@include mq(tablet) {
+    width: 768px;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    //@include mq(desktop) {
+    width: 1200px;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
 .footer__text {
   font-size: 14px;
   line-height: 152%;
@@ -209,6 +237,7 @@
   text-align: center;
 
   color: #907e82;
+  background: var(--footer-bg-color);
 
   @media screen and (min-width: 768px) {
     line-height: 186%;
