@@ -1,3 +1,7 @@
+.footer {
+  background: var(--footer-bg-color);
+}
+
 .footer-container {
   display: flex;
   flex-direction: column;
@@ -7,7 +11,6 @@
   padding-right: 20px;
 
   border-bottom: 1px solid #e1e1e1;
-  background: var(--footer-bg-color);
 
   @media screen and (min-width: 768px) {
     flex-direction: row;
@@ -26,9 +29,7 @@
 .footer-logo {
   display: flex;
   flex-direction: column;
-}
 
-.footer-logo__logo {
   margin-bottom: 40px;
 
   @media screen and (min-width: 768px) {
@@ -203,33 +204,6 @@
 
 // текст коопиратор
 
-.copirator {
-  margin: 0 auto;
-  padding-left: 20px;
-  padding-right: 20px;
-  width: 100%;
-
-  background: var(--footer-bg-color);
-
-  @media screen and (min-width: 480px) {
-    //@include mq(mobile) {
-    width: 480px;
-  }
-
-  @media screen and (min-width: 768px) {
-    //@include mq(tablet) {
-    width: 768px;
-    padding-left: 32px;
-    padding-right: 32px;
-  }
-
-  @media screen and (min-width: 1200px) {
-    //@include mq(desktop) {
-    width: 1200px;
-    padding-left: 16px;
-    padding-right: 16px;
-  }
-}
 .footer__text {
   font-size: 14px;
   line-height: 152%;
@@ -278,6 +252,7 @@
   height: 450px;
   border: 5px solid var(--accent-color);
   border-radius: 20px;
+
   @media screen and (min-width: 768px) {
     width: 450px;
   }
@@ -300,7 +275,6 @@
   background-color: #ffffff;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
-  cursor: var(--cursor);
 
   outline: transparent;
 
