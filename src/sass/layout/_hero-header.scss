@@ -12,6 +12,10 @@
   align-items: center;
 }
 
+.header-hero-section {
+  background-color: var(--secondary-bg-color);
+}
+
 .logo-link {
   @media screen and (max-width: 767.98px) {
     padding-top: 8px;
@@ -174,7 +178,7 @@
   margin-left: auto;
   margin-right: auto;
   position: relative;
-  background-color: #ffb8ca;
+
   height: 502px;
   width: 100%;
 
@@ -194,8 +198,8 @@
 }
 
 .hero__head {
+  margin-top: 194px;
   font-family: 'Titan One';
-  font-style: normal;
   font-weight: 400;
   font-size: 26px;
   line-height: 1.15;
@@ -204,7 +208,6 @@
 
   color: #ffffff;
   width: 218px;
-  padding-top: 194px;
   margin-bottom: 20px;
 }
 
@@ -255,6 +258,7 @@
   transition: background-color var(--duration) var(--timing-function);
 }
 
+
 @media screen and (min-width: 1200px) {
   .white {
     background-color: #ffffff;
@@ -272,11 +276,13 @@
   }
 }
 
-.white:hover {
+.white:hover,
+.white:focus {
   background-color: #ecebeb;
 }
 
-.pink:hover {
+.pink:hover,
+.pink:focus {
   background-color: #f0708e;
 }
 
@@ -325,7 +331,7 @@
   }
 
   .hero__head {
-    padding-top: 102px;
+    margin-top: 102px;
     font-size: 22px;
     line-height: 1.14;
     width: 168px;
@@ -381,7 +387,7 @@
   }
 
   .hero__head {
-    padding-top: 147px;
+    margin-top: 147px;
     margin-bottom: 24px;
     font-size: 38px;
     line-height: 1.16;
@@ -578,6 +584,10 @@
   }
 }
 
+.hero__item:hover .icon-man-cart {
+  animation: run 3s ease-in-out forwards;
+}
+
 .icon-man-cart {
   position: absolute;
   opacity: 0;
@@ -586,36 +596,63 @@
   transform: translateX(-500px);
   transition: transform 3000ms;
 
-  @media screen and (min-width: 1200px) {
-    bottom: -130px;
+  @media screen and (max-width: 1199.98px) {
+    bottom: -85px;
     left: -9px;
+    width: 43px;
+    height: 43px;
+
+    @keyframes run {
+      0% {
+        transform: translateX(-300px);
+      }
+
+      10% {
+        transform: translateX(-300x);
+        opacity: 1;
+      }
+
+      30% {
+        transform: translateX(0px);
+      }
+
+      60% {
+        opacity: 1;
+      }
+
+      100% {
+        transform: translateX(700px);
+        opacity: 0;
+      }
+    }
   }
-}
 
-.hero__item:hover .icon-man-cart {
-  animation: run 3s ease-in-out forwards;
-}
+  @media screen and (min-width: 1200px) {
+    bottom: -140px;
+    left: -9px;
 
-@keyframes run {
-  0% {
-    transform: translateX(-300px);
-  }
+    @keyframes run {
+      0% {
+        transform: translateX(-300px);
+      }
 
-  10% {
-    transform: translateX(-300x);
-    opacity: 1;
-  }
+      10% {
+        transform: translateX(-300x);
+        opacity: 1;
+      }
 
-  30% {
-    transform: translateX(0px);
-  }
+      30% {
+        transform: translateX(0px);
+      }
 
-  60% {
-    opacity: 1;
-  }
+      60% {
+        opacity: 1;
+      }
 
-  100% {
-    transform: translateX(1000px);
-    opacity: 0;
+      100% {
+        transform: translateX(1000px);
+        opacity: 0;
+      }
+    }
   }
 }
