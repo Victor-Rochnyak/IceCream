@@ -1,41 +1,64 @@
 .section__about {
-  padding-top: 60px;
-  padding-bottom: 40px;
-  background-color: #fff5f6;
+  // padding-top: 60px;
+  // padding-bottom: 40px;
+
   margin-left: auto;
   margin-right: auto;
 
   @media screen and(min-width: 768px) {
-    padding-top: 60px;
-    padding-bottom: 60px;
+    // padding-top: 60px;
+    // padding-bottom: 60px;
   }
 
   @media screen and (min-width: 1200px) {
-    padding-bottom: 40px;
+    // padding-bottom: 40px;
   }
 
   @media screen and (min-width: 1200px) {
     max-width: 1200px;
-    justify-content: start;
-    background-position-y: 216px;
-    background-size: contain;
-    background-repeat: no-repeat;
+    //   justify-content: start;
+    //   background-position-y: 216px;
+    //   background-size: contain;
+    //   background-repeat: no-repeat;
 
-    background-image: url(../images/about/about-bg-lg.png);
+    //   background-image: url(../images/about/about-bg-lg.png);
 
-    @media (min-device-pixel-ratio: 2),
-      (min-resolution: 192dpi),
-      (min-resolution: 2dppx) {
-      background-image: url(../images/about/about-bg-lg@2x.png);
-    }
+    //   @media (min-device-pixel-ratio: 2),
+    //     (min-resolution: 192dpi),
+    //     (min-resolution: 2dppx) {
+    //     background-image: url(../images/about/about-bg-lg@2x.png);
+    //   }
+    // }
   }
-}
 
-.container__about {
-  @media screen and (min-width: 1200px) {
-    width: 100%;
-    padding-left: 0;
-    padding-right: 0;
+  .container__about {
+    background-color: #fff5f6;
+    padding-top: 60px;
+    padding-bottom: 40px;
+
+    @media screen and (min-width: 768px) {
+      padding-top: 60px;
+      padding-bottom: 60px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      width: 100%;
+      padding-left: 0;
+      padding-right: 0;
+
+      justify-content: start;
+      background-position-y: 216px;
+      background-size: contain;
+      background-repeat: no-repeat;
+
+      background-image: url(../images/about/about-bg-lg.png);
+
+      @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: url(../images/about/about-bg-lg@2x.png);
+      }
+    }
   }
 }
 
@@ -101,6 +124,10 @@
 
 .about__undertext {
   margin-top: 40px;
+
+  @media screen and (min-width: 1200px) {
+    margin-top: 90px;
+  }
 }
 
 .about__text-first {
@@ -123,7 +150,6 @@
   @media screen and (min-width: 1200px) {
     width: 463px;
     font-size: 16px;
-    margin-top: 90px;
 
     letter-spacing: 0.04em;
   }
@@ -214,7 +240,7 @@
 .modal {
   position: absolute;
   text-align: center;
-  width: 50%;
+  width: 80%;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
@@ -230,7 +256,6 @@
   border-radius: 24px;
 
   @media screen and (min-width: 480px) {
-    width: 50%;
     padding-left: 40px;
     padding-right: 40px;
   }
