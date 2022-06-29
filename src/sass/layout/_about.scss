@@ -99,6 +99,10 @@
   }
 }
 
+.about__undertext {
+  margin-top: 40px;
+}
+
 .about__text-first {
   font-family: 'DM Sans';
   font-style: normal;
@@ -107,8 +111,6 @@
   line-height: 1.6;
   color: black;
   width: 220px;
-
-  margin-top: 40px;
 
   @media screen and (min-width: 768px) {
     width: 334px;
