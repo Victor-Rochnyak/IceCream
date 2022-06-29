@@ -92,7 +92,7 @@
 
   color: #d41443;
 
-  max-width: 480px;
+  max-width: 250px;
 
   @media screen and (min-width: 768px) {
     max-width: 300px;
@@ -128,6 +128,9 @@
 }
 
 .mobyle__link {
+  padding: 12px 0;
+  padding-left: 20px;
+
   font-family: 'DM Sans';
   font-style: normal;
   font-weight: 700;
@@ -143,8 +146,8 @@
 }
 
 .mobyle__nav-item {
-  padding: 12px 0;
-  padding-left: 20px;
+  // padding: 12px 0;
+  // padding-left: 20px;
   width: 100%;
 
   &:nth-child(2n + 1) {
@@ -181,16 +184,31 @@
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 500px;
+  max-width: 400px;
+
+  @media screen and (min-width: 768px) {
+    max-width: 500px;
+  }
+  width: 100%;
   padding: 25px;
   z-index: 2000;
 
-  background-color: #fff;
+  background-color: var(--secondary-bg-color);
   border-radius: 10px;
 
   transition: transform 300ms ease-in-out 200ms, opacity 300ms ease-in-out 200ms;
 }
+.modal-wrapper__choose-ice {
+  margin-bottom: 15px;
 
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.29;
+
+  color: #303030;
+}
 /* початковий стан елемента перед анімацією */
 .backdrop.is-hidden .modal-wrapper {
   transform: translate(-50%, -50%) scale(0.4);
@@ -203,7 +221,7 @@
   opacity: 1;
 }
 
-.modal-btn {
+.modal-wrapper__btn {
   position: absolute;
   top: 10px;
   right: 10px;
@@ -215,11 +233,45 @@
   height: 30px;
   padding: 0;
 
-  border: 1px solid #ff6c00;
+  border: 1px solid var(--accent-color);
   border-radius: 50%;
-  background-color: transparent;
+  // background-color: transparent;
+  background-color: var(--secondary-bg-color);
 
   cursor: pointer;
+}
+
+.modal__close-icon--buy {
+  fill: #df1313;
+}
+
+.modal-wrapper__choos {
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.29;
+
+  color: #303030;
+
+  &:nth-child(2n + 1) {
+    margin-left: 30px;
+  }
+}
+
+.modal-wrapper__input {
+  width: 60px;
+  padding: 6px 6px;
+
+  border-radius: 5px;
+  border: 1px solid #191c26;
+  outline: transparent;
+}
+
+.modal-wrapper__icecream--img {
+  display: block;
+  border-radius: 10px;
+  box-shadow: 2px 1px 2px 2px #908d8d;
 }
 
 /* modal form */
@@ -229,6 +281,20 @@
   text-transform: uppercase;
   text-align: center;
   margin-bottom: 25px;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.31;
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  justify-content: center;
+
+  color: var(--accent-color);
+}
+.modal-wrapper__price {
+  margin-bottom: 30px;
 }
 
 .modal-form__group {
@@ -240,7 +306,14 @@
 .modal-form__label {
   position: relative;
   display: inline-block;
+
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 700;
   font-size: 14px;
+  line-height: 1.29;
+
+  color: #303030;
 }
 
 .modal-form__label:before {
@@ -279,7 +352,7 @@
   transition: fill 400ms ease-in-out;
 
   .modal-form__input:focus ~ & {
-    fill: #ffc039;
+    fill: #fc0909;
   }
 
   .modal-form__input:valid:not(:placeholder-shown) ~ & {
@@ -313,7 +386,7 @@
 }
 
 .alert--warning {
-  color: #ffc039;
+  color: #fc0909;
 }
 
 .alert-icon {
@@ -329,7 +402,7 @@
 }
 
 .alert-icon--warning {
-  fill: #ffc039;
+  fill: #fc0909;
 }
 
 .alert-icon--error {
@@ -355,63 +428,13 @@
   transform: scale(1);
 }
 
-/* checkbox style */
-.form__checkbox {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  cursor: pointer;
-}
-.form__custom-check {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  width: 16px;
-  height: 15px;
-
-  margin-right: 7px;
-
-  border: 2px solid #212121;
-  border-radius: 2px;
-
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.form__check {
-  fill: var(--first-color-text);
-
-  opacity: 0;
-
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-/* payment checkbox */
-.form__checkbox-input {
-  width: 16px;
-  height: 15px;
-  background-color: #212121;
-}
-
-.form__checkbox-input:checked + .form__custom-check {
-  background-color: var(--accent-color);
-  border-color: var(--accent-color);
-}
-.form__checkbox-input:focus + .form__custom-check,
-.form__checkbox-input:hover + .form__custom-check {
-  border-color: var(--accent-color);
-}
-
-.form__checkbox-input:checked + .form__custom-check .form__check {
-  opacity: 1;
-}
-
-.btn {
+.modal-wrapper__btn-submit {
   padding: 12px 20px;
   max-width: 200px;
   min-width: 160px;
   min-height: 40px;
+  margin-right: auto;
+  margin-left: auto;
 
   font-family: inherit;
   font-weight: 600;
@@ -426,4 +449,19 @@
   cursor: pointer;
 
   transition: background-color var(--duration);
+}
+.modal-form__submit-btn {
+  display: block;
+  margin: 0 auto;
+}
+
+//  Addres
+.form__text {
+  display: block;
+  margin-bottom: 4px;
+}
+.form__textarea {
+  height: 120px;
+  padding-left: 16px;
+  resize: none;
 }
