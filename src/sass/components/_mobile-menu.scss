@@ -170,6 +170,7 @@
   height: 100%;
   background-color: rgba(0, 0, 0, 0.3);
   z-index: 2000;
+  overflow-y: scroll;
 
   transition: opacity var(--fast-anim), visibility var(--fast-anim);
 }
@@ -182,14 +183,15 @@
 
 .modal-wrapper {
   position: absolute;
-  top: 50%;
+  top: 70%;
   left: 50%;
-  max-width: 400px;
+  max-width: 350px;
+  width: 100%;
 
   @media screen and (min-width: 768px) {
-    max-width: 500px;
+    max-width: 400px;
   }
-  width: 100%;
+
   padding: 25px;
   z-index: 2000;
 
@@ -239,6 +241,13 @@
   background-color: var(--secondary-bg-color);
 
   cursor: pointer;
+
+  transition: background-color var(--duration) var(--timing-function);
+
+  &:hover,
+  &:focus {
+    background-color: var(--forth-bg-color);
+  }
 }
 
 .modal__close-icon--buy {
@@ -252,11 +261,21 @@
   font-size: 14px;
   line-height: 1.29;
 
-  color: #303030;
+  cursor: pointer;
 
-  &:nth-child(2n + 1) {
-    margin-left: 30px;
-  }
+  color: #303030;
+}
+
+.modal-wrapper__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.modal-wrapper__item:not(:nth-last-child(-n + 2)) {
+  margin-bottom: 10px;
 }
 
 .modal-wrapper__input {
@@ -433,8 +452,9 @@
   max-width: 200px;
   min-width: 160px;
   min-height: 40px;
-  margin-right: auto;
-  margin-left: auto;
+
+  display: block;
+  margin: 0 auto;
 
   font-family: inherit;
   font-weight: 600;
@@ -445,14 +465,15 @@
 
   border: 1px solid var(--accent-color);
   border-radius: 25px;
-  background-color: transparent;
+  background-color: var(--secondary-bg-color);
   cursor: pointer;
 
-  transition: background-color var(--duration);
-}
-.modal-form__submit-btn {
-  display: block;
-  margin: 0 auto;
+  transition: background-color var(--duration) var(--timing-function);
+
+  &:hover,
+  &:focus {
+    background-color: var(--forth-bg-color);
+  }
 }
 
 //  Addres

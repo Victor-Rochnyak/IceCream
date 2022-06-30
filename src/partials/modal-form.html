@@ -15,23 +15,25 @@
       ></use>
     </svg>
   </button>
-  <ul class="mobyle__nav">
-    <li class="mobyle__nav-item">
-      <a href="#header" class="mobyle__link mobyle__link--home link">Home</a>
-    </li>
-    <li class="mobyle__nav-item">
-      <a href="#costumer" class="mobyle__link link">About us</a>
-    </li>
-    <li class="mobyle__nav-item">
-      <a href="#about" class="mobyle__link link">How it’s made?</a>
-    </li>
-    <li class="mobyle__nav-item">
-      <a href="#products" class="mobyle__link link">Our products</a>
-    </li>
-    <li class="mobyle__nav-item">
-      <a href="#contacts" class="mobyle__link link">Contact</a>
-    </li>
-  </ul>
+  <nav>
+    <ul class="mobyle__nav">
+      <li class="mobyle__nav-item">
+        <a href="#header" class="mobyle__link mobyle__link--home link">Home</a>
+      </li>
+      <li class="mobyle__nav-item">
+        <a href="#costumer" class="mobyle__link link">About us</a>
+      </li>
+      <li class="mobyle__nav-item">
+        <a href="#about" class="mobyle__link link">How it’s made?</a>
+      </li>
+      <li class="mobyle__nav-item">
+        <a href="#products" class="mobyle__link link">Our products</a>
+      </li>
+      <li class="mobyle__nav-item">
+        <a href="#contacts" class="mobyle__link link">Contact</a>
+      </li>
+    </ul>
+  </nav>
 </div>
 
 <!-- модальне вікно Купити зараз -->
@@ -49,75 +51,89 @@
       <div class="modal-wrapper__price">
         <p class="modal-wrapper__choose-ice">Choose ice cream:</p>
 
-        <label class="modal-wrapper__choos">
-          <img
-            class="modal-wrapper__icecream--img"
-            src="/src/images/products/iceCream_m.jpg"
-            alt="iceCream"
-            width="50"
-            height="50"
-          />
-          <input type="checkbox" name="hobby" checked />
-          Ice Cream - 5$
-        </label>
-        <label class="modal-wrapper__choos">
-          Number:
-          <input
-            class="modal-wrapper__input"
-            type="number"
-            name="weight"
-            min="0"
-            max="30"
-            step="1"
-            value=""
-          />
-        </label>
-        <label class="modal-wrapper__choos">
-          <img
-            class="modal-wrapper__icecream--img"
-            src="/src/images/products/iceCoffee_m.jpg"
-            alt="iceCream"
-            width="50"
-            height="50"
-          />
-          <input type="checkbox" name="hobby" value="" checked />
-          Ice Coffee - 6$
-        </label>
-        <label class="modal-wrapper__choos">
-          Number:
-          <input
-            class="modal-wrapper__input"
-            type="number"
-            name="weight"
-            min="0"
-            max="30"
-            step="1"
-            value=""
-          />
-        </label>
-        <label class="modal-wrapper__choos">
-          <img
-            class="modal-wrapper__icecream--img"
-            src="/src/images/products/milk_m.jpg"
-            alt="iceCream"
-            width="50"
-            height="50"
-          />
-          <input type="checkbox" name="hobby" value="" />
-          Milkshakes - 8$
-        </label>
-        <label class="modal-wrapper__choos">
-          Number:
-          <input
-            class="modal-wrapper__input"
-            type="number"
-            name="weight"
-            min="0"
-            max="30"
-            step="1"
-            value=""
-          />
-        </label>
+        <ul class="modal-wrapper__list">
+          <li class="modal-wrapper__item">
+            <label class="modal-wrapper__choos">
+              <img
+                class="modal-wrapper__icecream--img"
+                src="/src/images/products/iceCream_m.jpg"
+                alt="iceCream"
+                width="50"
+                height="50"
+              />
+              <input type="checkbox" name="hobby" />
+              Ice Cream - 5$
+            </label>
+          </li>
+          <li class="modal-wrapper__item">
+            <label class="modal-wrapper__choos">
+              Number:
+              <input
+                class="modal-wrapper__input"
+                type="number"
+                name="weight"
+                min="0"
+                max="30"
+                step="1"
+                value=""
+              />
+            </label>
+          </li>
+          <li class="modal-wrapper__item">
+            <label class="modal-wrapper__choos">
+              <img
+                class="modal-wrapper__icecream--img"
+                src="/src/images/products/iceCoffee_m.jpg"
+                alt="iceCream"
+                width="50"
+                height="50"
+              />
+              <input type="checkbox" name="hobby" value="" />
+              Ice Coffee - 6$
+            </label>
+          </li>
+          <li class="modal-wrapper__item">
+            <label class="modal-wrapper__choos">
+              Number:
+              <input
+                class="modal-wrapper__input"
+                type="number"
+                name="weight"
+                min="0"
+                max="30"
+                step="1"
+                value=""
+              />
+            </label>
+          </li>
+          <li class="modal-wrapper__item">
+            <label class="modal-wrapper__choos">
+              <img
+                class="modal-wrapper__icecream--img"
+                src="/src/images/products/milk_m.jpg"
+                alt="iceCream"
+                width="50"
+                height="50"
+              />
+              <input type="checkbox" name="hobby" value="" />
+              Milkshakes - 8$
+            </label>
+          </li>
+          <li class="modal-wrapper__item">
+            <label class="modal-wrapper__choos">
+              Number:
+              <input
+                class="modal-wrapper__input"
+                type="number"
+                name="weight"
+                min="0"
+                max="30"
+                step="1"
+                value=""
+              />
+            </label>
+          </li>
+        </ul>
       </div>
 
       <!-- дані відвідувача -->
@@ -128,7 +144,7 @@
           type="text"
           name="user-name"
           minlength="3"
-          placeholder=" "
+          placeholder="Ruslan"
           required
         />
         <span class="alert alert--warning">
@@ -150,9 +166,9 @@
         <span class="modal-form__label">Phone</span>
         <input
           class="modal-form__input"
-          type="phone"
+          type="number"
           name="user-phone"
-          placeholder=" "
+          placeholder="+38 099 123 45 67"
           required
         />
         <span class="alert alert--warning">
@@ -182,12 +198,7 @@
         </label>
       </div>
 
-      <button
-        class="modal-wrapper__btn-submit modal-form__submit-btn"
-        type="submit"
-      >
-        Buy
-      </button>
+      <button class="modal-wrapper__btn-submit" type="submit">Buy</button>
     </form>
   </div>
 </div>
