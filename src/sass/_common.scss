@@ -5,6 +5,10 @@ body {
   min-width: 320px;
 }
 
+body.modal-open {
+  overflow: hidden;
+}
+
 html {
   scroll-behavior: smooth;
 }

@@ -170,6 +170,7 @@
   height: 100%;
   background-color: rgba(0, 0, 0, 0.3);
   z-index: 2000;
+  overflow-y: scroll;
 
   transition: opacity var(--fast-anim), visibility var(--fast-anim);
 }
@@ -182,12 +183,14 @@
 
 .modal-wrapper {
   position: absolute;
-  top: 50%;
+  top: 70%;
   left: 50%;
-  max-width: 400px;
+  max-width: 350px;
+  width: 95%;
 
   @media screen and (min-width: 768px) {
-    max-width: 500px;
+    max-width: 400px;
+    width: 100%;
   }
   width: 100%;
   padding: 25px;
