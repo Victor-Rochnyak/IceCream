@@ -183,10 +183,16 @@
 
 .modal-wrapper {
   position: absolute;
-  top: 70%;
+  top: 50%;
   left: 50%;
   max-width: 350px;
+  max-height: 762px;
   width: 100%;
+
+
+  height: calc(100vh - 30px);
+  // width: calc(100vw - 30px);
+  overflow: auto;
 
   @media screen and (min-width: 768px) {
     max-width: 400px;
