@@ -185,18 +185,13 @@
   position: absolute;
   top: 50%;
   left: 50%;
-  max-width: 350px;
-  max-height: 762px;
+  max-width: 380px;
+  max-height: 620px;
   width: 100%;
 
-
+  width: calc(100vw - 30px);
   height: calc(100vh - 30px);
-  // width: calc(100vw - 30px);
   overflow: auto;
-
-  @media screen and (min-width: 768px) {
-    max-width: 400px;
-  }
 
   padding: 25px;
   z-index: 2000;
@@ -212,7 +207,7 @@
   font-family: 'DM Sans';
   font-style: normal;
   font-weight: 700;
-  font-size: 18px;
+  font-size: 17px;
   line-height: 1.29;
 
   color: #303030;
@@ -285,8 +280,9 @@
 }
 
 .modal-wrapper__input {
-  width: 60px;
-  padding: 6px 6px;
+  width: 40px;
+  padding: 2px 6px;
+  margin-left: 5px;
 
   border-radius: 5px;
   border: 1px solid #191c26;
@@ -295,6 +291,7 @@
 
 .modal-wrapper__icecream--img {
   display: block;
+  width: 30px;
   border-radius: 10px;
   box-shadow: 2px 1px 2px 2px #908d8d;
 }
@@ -305,10 +302,9 @@
   font-size: 20px;
   text-transform: uppercase;
   text-align: center;
-  margin-bottom: 25px;
 
   font-weight: 700;
-  font-size: 16px;
+  font-size: 20px;
   line-height: 1.31;
   display: flex;
   align-items: center;
@@ -319,13 +315,13 @@
   color: var(--accent-color);
 }
 .modal-wrapper__price {
-  margin-bottom: 30px;
+  margin-bottom: 10px;
 }
 
 .modal-form__group {
   position: relative;
   display: block;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
 
 .modal-form__label {
@@ -352,7 +348,7 @@
 /* Стилізація інпута */
 .modal-form__input {
   width: 100%;
-  padding: 12px 40px;
+  padding: 6px 40px;
 
   border-radius: 5px;
   border: 1px solid #191c26;
@@ -370,7 +366,7 @@
 /* Стилізація іконок на інпуті */
 .modal-form__icon {
   position: absolute;
-  bottom: 12px;
+  bottom: 7px;
   left: 10px;
 
   fill: #303030;
@@ -392,7 +388,7 @@
 /* Стилізація попереджень для інпутів */
 .alert {
   position: absolute;
-  bottom: -22px;
+  bottom: -15px;
   left: 10px;
 
   width: 90%;
@@ -417,7 +413,7 @@
 .alert-icon {
   position: absolute;
   right: 10px;
-  bottom: 12px;
+  bottom: 7px;
   display: inline-flex;
   fill: currentColor;
   opacity: 0;
@@ -460,7 +456,7 @@
   min-height: 40px;
 
   display: block;
-  margin: 0 auto;
+  margin: 14px auto 0;
 
   font-family: inherit;
   font-weight: 600;
