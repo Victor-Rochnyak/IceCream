@@ -531,13 +531,23 @@
   }
 }
 
-.amount-list__text--foodtrucks {
+.amount-list__text--cafes {
   @media screen and (max-width: 1199.98px) {
-    width: 43px;
+    width: 23px;
   }
 
   @media screen and (min-width: 1200px) {
-    width: 74px;
+    width: 40px;
+  }
+}
+
+.amount-list__text--foodtrucks {
+  @media screen and (max-width: 1199.98px) {
+    width: 45px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 78px;
   }
 }
 
