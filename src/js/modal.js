@@ -13,3 +13,19 @@
     refs.menu.classList.toggle('is-hidden');
   }
 })();
+
+(() => {
+  const refs = {
+    openBuyBtn: document.querySelector('[data-buy-open]'),
+    closeBuyBtn: document.querySelector('[data-buy-close]'),
+    menu: document.querySelector('[data-buy]'),
+  };
+
+  refs.openBuyBtn.addEventListener('click', toggleBuy);
+  refs.closeBuyBtn.addEventListener('click', toggleBuy);
+
+  function toggleBuy() {
+    document.body.classList.toggle('buy-open');
+    refs.menu.classList.toggle('is-hidden');
+  }
+})();
