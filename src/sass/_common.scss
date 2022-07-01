@@ -3,6 +3,8 @@
 body {
   font-family: var(--main-font);
   min-width: 320px;
+
+  overflow: hidden;
 }
 
 body.modal-open {
