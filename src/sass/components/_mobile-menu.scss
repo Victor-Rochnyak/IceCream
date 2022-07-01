@@ -212,6 +212,9 @@
 
   color: #303030;
 }
+
+
+
 /* початковий стан елемента перед анімацією */
 .backdrop.is-hidden .modal-wrapper {
   transform: translate(-50%, -50%) scale(0.4);
