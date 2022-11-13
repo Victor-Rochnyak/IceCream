@@ -1,3 +1,8 @@
+**Read in other languages: [Українська/Ukrainian](README.uk.md), [Polski](README.pl.md).**
+
+[![Typing SVG](https://readme-typing-svg.herokuapp.com?color=%2336BCF7&lines=This+is+our+team+project+.)](https://git.io/typing-svg)
+[![Typing SVG](https://readme-typing-svg.herokuapp.com?color=%2336BCF7&lines=We+are+"+MAGIC+OUTSIDE+HOGWARTS+")](https://git.io/typing-svg)
+
 # Website - "Ice Cream"
 A short-term team project by 11 collaborators.
 
